@@ -39,7 +39,7 @@
 <color id="fightInformationChannelColor" color="#009900"/> <!-- Combat : vert -->
 <color id="errorChannelColor"            color="#bd0000"/> <!-- Erreurs / alertes : rouge -->
 <color id="secondTextLightColor" color="#ffffffb2"/>            <!-- [vérifié] Titres de section (« Combat », « Jouabilité », « Builds »), texte secondaire (« Steamer », « Prix moy. », XP, « Niv. 20 ») -->
-<color id="mainTextTitleColor" color="#b47777"/>                <!-- [vérifié] Libellés des cases à cocher, onglets inactifs, texte dans les champs de saisie, « Remettre à zéro », montant de kamas -->
+<color id="mainTextTitleColor" color="#f2ead0"/>            <!-- [vérifié] Libellés des cases à cocher, onglets inactifs, texte dans les champs de saisie, « Remettre à zéro », montant de kamas -->
 <color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Texte des infobulles d'aide (raccourcis, Havre-Sac), titre de l'infobulle des aptitudes, PV dans le cœur -->
 <color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Texte sur petites étiquettes claires : rareté (« Légendaire »), « Actif » -->
 <color id="white50" color="#FFFFFF7F"/>                         <!-- [vérifié] Texte du bouton « Enregistrer » (builds) -->

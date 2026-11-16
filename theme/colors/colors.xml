@@ -38,7 +38,7 @@
 <color id="informationChannelColor"      color="#009900"/> <!-- Informations : vert -->
 <color id="fightInformationChannelColor" color="#009900"/> <!-- Combat : vert -->
 <color id="errorChannelColor"            color="#bd0000"/> <!-- Erreurs / alertes : rouge -->
-<color id="secondTextLightColor" color="#ffffffb2"/>            <!-- [vérifié] Titres de section (« Combat », « Jouabilité », « Builds »), texte secondaire (« Steamer », « Prix moy. », XP, « Niv. 20 ») -->
+<color id="secondTextLightColor" color="#5a4630"/>            <!-- [vérifié] Titres de section (« Combat », « Jouabilité », « Builds »), texte secondaire (« Steamer », « Prix moy. », XP, « Niv. 20 ») -->
 <color id="mainTextTitleColor" color="#f2ead0"/>            <!-- [vérifié] Libellés des cases à cocher, onglets inactifs, texte dans les champs de saisie, « Remettre à zéro », montant de kamas -->
 <color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Texte des infobulles d'aide (raccourcis, Havre-Sac), titre de l'infobulle des aptitudes, PV dans le cœur -->
 <color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Texte sur petites étiquettes claires : rareté (« Légendaire »), « Actif » -->
@@ -69,24 +69,24 @@
 <color id="selectionDarkTextEditorColor" color="#E5E5E5FF"/>    <!-- [supposé] Texte sélectionné dans un champ de saisie -->
 <color id="defaultDisabledColor" color="#999999FF"/>            <!-- [supposé] Élément désactivé -->
 <color id="pressedBlackColor" color="#B2B2B2FF"/>               <!-- [supposé] Élément foncé appuyé -->
-<color id="secondaryLight" color="#B5EFE5FF"/>                  <!-- [supposé] Accent clair secondaire -->
+<color id="secondaryLight" color="#c4560f"/>                 <!-- [supposé] Accent clair secondaire -->
 
 <!-- ===== FONDS DE FENÊTRES, LISTES ET TABLEAUX ===== -->
 <color id="windowBackgroundColor" color="#3e3628"/>                  <!-- [supposé] Fond de fenêtre (la plupart des fonds viennent en fait des images textures/NP-window-*) -->
-<color id="evenCellColor" color="#3e3628"/>                          <!-- [supposé] Lignes paires des listes -->
-<color id="oddCellColor" color="#4a4236"/>                           <!-- [supposé] Lignes impaires des listes -->
+<color id="evenCellColor"        color="#c9bf9d"/>                       <!-- [supposé] Lignes paires des listes -->
+<color id="oddCellColor"         color="#bdb594"/>                         <!-- [supposé] Lignes impaires des listes -->
 <color id="selectedCellColor" color="#7a4a1e"/>                      <!-- [supposé] Ligne sélectionnée -->
-<color id="mouseOverCellColor" color="#5e5444"/>                     <!-- [supposé] Ligne survolée -->
+<color id="mouseOverCellColor"       color="#a39a7c"/>                   <!-- [supposé] Ligne survolée -->
 <color id="pressedLightColor" color="#5e5444"/>                      <!-- [supposé] Élément clair appuyé -->
-<color id="darkOddCellColor" color="#3e3628"/>                       <!-- [supposé] Lignes impaires (listes sombres) -->
-<color id="darkEvenCellColor" color="#4a4236"/>                      <!-- [supposé] Lignes paires (listes sombres) -->
+<color id="darkOddCellColor"     color="#c9bf9d"/>                   <!-- [supposé] Lignes impaires (listes sombres) -->
+<color id="darkEvenCellColor"    color="#bdb594"/>                     <!-- [supposé] Lignes paires (listes sombres) -->
 <color id="darkSelectedCellColor" color="#7a4a1e"/>                  <!-- [supposé] Ligne sélectionnée (listes sombres) -->
-<color id="darkMouseOverCellColor" color="#5e5444"/>                 <!-- [supposé] Ligne survolée (listes sombres) -->
-<color id="scrollEvenCellColor" color="#3e3628"/>                    <!-- [supposé] Lignes paires (listes déroulantes) -->
-<color id="scrollOddCellColor" color="#3e3628"/>                     <!-- [supposé] Lignes impaires (listes déroulantes) -->
+<color id="darkMouseOverCellColor"   color="#a39a7c"/>              <!-- [supposé] Ligne survolée (listes sombres) -->
+<color id="scrollEvenCellColor"  color="#c9bf9d"/>                 <!-- [supposé] Lignes paires (listes déroulantes) -->
+<color id="scrollOddCellColor"   color="#c9bf9d"/>                  <!-- [supposé] Lignes impaires (listes déroulantes) -->
 <color id="scrollSelectedCellColor" color="#7a4a1e"/>                <!-- [supposé] Ligne sélectionnée (listes déroulantes) -->
-<color id="scrollMouseOverCellColor" color="#5e5444"/>               <!-- [supposé] Ligne survolée (listes déroulantes) -->
-<color id="detailedCellColor" color="#3e3628"/>                      <!-- [supposé] Ligne de détail -->
+<color id="scrollMouseOverCellColor" color="#a39a7c"/>            <!-- [supposé] Ligne survolée (listes déroulantes) -->
+<color id="detailedCellColor"    color="#c9bf9d"/>                   <!-- [supposé] Ligne de détail -->
 <color id="listHighlightColor" color="#e0701a"/>                     <!-- [supposé] Surbrillance dans les listes -->
 <color id="listFilterColor" color="#B7C9D3FF"/>                      <!-- [supposé] Filtre de liste -->
 <color id="fleaEvenCellColor" color="#3e3628"/>                      <!-- [supposé] Hôtel de vente : lignes paires -->
@@ -130,26 +130,27 @@
 <color id="previewButtonBorderColor" color="#3D999100"/>  <!-- [supposé] Bordure du bouton d'aperçu -->
 
 <!-- ===== CARACTÉRISTIQUES, ÉLÉMENTS ET JETS ===== -->
-<color id="characStandardColor" color="#84DD63FF"/>              <!-- [observé] Valeurs de caractéristiques positives (ex. « 23 % » en vert dans la fiche perso) -->
+<color id="characStandardColor"  color="#2f7d12"/>              <!-- [observé] Valeurs de caractéristiques positives (ex. « 23 % » en vert dans la fiche perso) -->
 <color id="legacyCharacStandardColor" color="#56AA56FF"/>        <!-- [supposé] Ancienne couleur des valeurs de caractéristiques -->
-<color id="characNegativeColor" color="#FF6666FF"/>              <!-- [observé] Valeurs de caractéristiques négatives (ex. « -22 % » en rouge) -->
+<color id="characNegativeColor"  color="#b8281e"/>           <!-- [observé] Valeurs de caractéristiques négatives (ex. « -22 % » en rouge) -->
 <color id="defaultLightGoldColor" color="#F2A33FFF"/>            <!-- [vérifié] Jets améliorés dans les infobulles (lignes orange) -->
 <color id="defaultIntenseGoldColor" color="#FFC626FF"/>          <!-- [supposé] Or intense (valeurs mises en avant) -->
-<color id="fireColor" color="#FF9333FF"/>                        <!-- [observé] Élément Feu (valeurs dans la fiche perso) -->
-<color id="waterColor" color="#99F9F9FF"/>                       <!-- [observé] Élément Eau -->
-<color id="earthColor" color="#C4DD1EFF"/>                       <!-- [observé] Élément Terre -->
-<color id="airColor" color="#ED99FFFF"/>                         <!-- [observé] Élément Air -->
-<color id="fireGradientColor" color="#FF0E00FF"/>                <!-- [supposé] Dégradé Feu -->
-<color id="waterGradientColor" color="#00DFFFFF"/>               <!-- [supposé] Dégradé Eau -->
-<color id="earthGradientColor" color="#67DC00FF"/>               <!-- [supposé] Dégradé Terre -->
-<color id="windGradientColor" color="#C300FFFF"/>                <!-- [supposé] Dégradé Air -->
-<color id="lightGradientColor" color="#FFEA03FF"/>               <!-- [supposé] Dégradé Lumière -->
-<color id="stasisGradientColor" color="#FF0099FF"/>              <!-- [supposé] Dégradé Stasis -->
-<color id="neutralGradientColor" color="#F4D79FFF"/>             <!-- [supposé] Dégradé neutre -->
+<color id="fireColor"            color="#c4570f"/>                      <!-- [observé] Élément Feu (valeurs dans la fiche perso) -->
+<color id="waterColor"           color="#1b7fa8"/>                     <!-- [observé] Élément Eau -->
+<color id="earthColor"           color="#6b8a00"/>                     <!-- [observé] Élément Terre -->
+<color id="airColor"             color="#9b3fb5"/>                     <!-- [observé] Élément Air -->
+<color id="fireGradientColor"    color="#e0701aff"/> <!-- feu : orange brûlé -->
+<color id="waterGradientColor"   color="#2a9fd0ff"/> <!-- eau : bleu -->
+<color id="earthGradientColor"   color="#7fa300ff"/> <!-- terre : vert olive -->
+<color id="windGradientColor"    color="#b052d4ff"/> <!-- air : violet -->
+<color id="lightGradientColor"   color="#e0b800ff"/> <!-- lumière : or -->
+<color id="stasisGradientColor"  color="#d4207fff"/> <!-- stasis : framboise -->
+<color id="neutralGradientColor" color="#b4ac8dff"/> <!-- neutre : taupe -->
+
 <color id="HPColor" color="#d82b45"/>                            <!-- [observé] Points de vie (texte PV) -->
 <color id="APColor" color="#328dda"/>                            <!-- [observé] Points d'action (PA) -->
-<color id="MPColor" color="#55aa55"/>                            <!-- [observé] Points de mouvement (PM) -->
-<color id="WPColor" color="#30cfa6"/>                            <!-- [observé] Points de Wakfu (PW) -->
+<color id="MPColor"              color="#2f8a2f"/>                         <!-- [observé] Points de mouvement (PM) -->
+<color id="WPColor"              color="#1f9e86"/>                         <!-- [observé] Points de Wakfu (PW) -->
 <color id="SPColor" color="#1A001AFF"/>                          <!-- [supposé] Points de Stasis -->
 <color id="QBColor" color="#FFBA00FF"/>                          <!-- [supposé] Points de quête / bonus -->
 <color id="APLightColor" color="#00AEEAFF"/>                     <!-- [supposé] PA (variante claire) -->

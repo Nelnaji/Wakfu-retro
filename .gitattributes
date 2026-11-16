@@ -1,0 +1,11 @@
+# Fichiers binaires (pas de conversion de fins de ligne, pas de diff texte)
+*.png binary
+*.dds binary
+*.tga binary
+
+# Exclus des téléchargements « Download ZIP » / git archive :
+# les joueurs ne récupèrent que le thème (theme_Retro-Wakfu/) et le README.
+outils/            export-ignore
+docs/              export-ignore
+.gitattributes     export-ignore
+.gitignore         export-ignore

@@ -38,17 +38,21 @@
 <color id="informationChannelColor"      color="#009900"/> <!-- Informations : vert -->
 <color id="fightInformationChannelColor" color="#009900"/> <!-- Combat : vert -->
 <color id="errorChannelColor"            color="#bd0000"/> <!-- Erreurs / alertes : rouge -->
-<color id="secondTextLightColor" color="#5a4630"/>            <!-- [vérifié] Titres de section (« Combat », « Jouabilité », « Builds »), texte secondaire (« Steamer », « Prix moy. », XP, « Niv. 20 ») -->
+<color id="secondTextLightColor" color="#ffffff"/>            <!-- [vérifié] Titres de section (« Combat », « Jouabilité », « Builds »), texte secondaire (« Steamer », « Prix moy. », XP, « Niv. 20 ») -->
 <color id="mainTextTitleColor" color="#f2ead0"/>            <!-- [vérifié] Libellés des cases à cocher, onglets inactifs, texte dans les champs de saisie, « Remettre à zéro », montant de kamas -->
 <color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Texte des infobulles d'aide (raccourcis, Havre-Sac), titre de l'infobulle des aptitudes, PV dans le cœur -->
 <color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Texte sur petites étiquettes claires : rareté (« Légendaire »), « Actif » -->
 <color id="white50" color="#FFFFFF7F"/>                         <!-- [vérifié] Texte du bouton « Enregistrer » (builds) -->
 <color id="thirdTextColor" color="#FFFFFF7F"/>                  <!-- [vérifié] Valeur « Restants » (aptitudes), texte tertiaire -->
 <color id="textDarkTextEditorColor" color="#E5DDCCCC"/>         <!-- [observé] Texte du HUD : niveau à côté du cœur, quantités dans la barre de raccourcis -->
+
+
+
+
 <color id="disabledTextColor" color="#ffffffb2"/>               <!-- [supposé] Texte désactivé / grisé -->
-<color id="defaultDarkColor" color="#240505"/>                  <!-- [supposé] Texte « foncé » par défaut (peu visible dans les tests) -->
-<color id="defaultBlackColor" color="#353131"/>                 <!-- [supposé] Texte « noir » par défaut (peu visible dans les tests) -->
-<color id="blackColor" color="#ffffff"/>                        <!-- [supposé] Texte noir générique -->
+<color id="defaultDarkColor" color="#c6fcc9"/>                  <!-- [supposé] Texte « foncé » par défaut (peu visible dans les tests) -->
+<color id="defaultBlackColor" color="#f8dada"/>                 <!-- [supposé] Texte « noir » par défaut (peu visible dans les tests) -->
+<color id="blackColor" color="#e4ffff"/>                        <!-- [supposé] Texte noir générique -->
 <color id="whiteColor" color="#FFFFFFFF"/>                      <!-- [supposé] Blanc générique -->
 <color id="greyColor" color="#ffffff"/>                         <!-- [supposé] Texte gris générique -->
 <color id="mecanicBlueColor" color="#ffffff"/>                  <!-- [supposé] Texte d'accent « mécanique » (Wakfu bleu) -->
@@ -58,6 +62,8 @@
 <color id="neutralStateColor" color="#ffffff"/>                 <!-- [supposé] Valeur neutre (ni bonus ni malus) -->
 <color id="positiveStateColor" color="#46a324"/>                <!-- [supposé] Valeur positive / bonus -->
 <color id="negativeStateColor" color="#d6454a"/>                <!-- [supposé] Valeur négative / malus -->
+
+
 <color id="achievementCategoryCompleteColor" color="#ffffff"/>  <!-- [supposé] Catégorie d'exploits terminée -->
 <color id="importantTextColor" color="#e7d2a6"/>                <!-- [supposé] Texte important / mis en avant -->
 <color id="descriptionPopupColor" color="#ffe186"/>             <!-- [supposé] Texte des popups de description -->
@@ -71,19 +77,33 @@
 <color id="pressedBlackColor" color="#B2B2B2FF"/>               <!-- [supposé] Élément foncé appuyé -->
 <color id="secondaryLight" color="#c4560f"/>                 <!-- [supposé] Accent clair secondaire -->
 
+
+
+
+
+
+
 <!-- ===== FONDS DE FENÊTRES, LISTES ET TABLEAUX ===== -->
-<color id="windowBackgroundColor" color="#3e3628"/>                  <!-- [supposé] Fond de fenêtre (la plupart des fonds viennent en fait des images textures/NP-window-*) -->
-<color id="evenCellColor"        color="#c9bf9d"/>                       <!-- [supposé] Lignes paires des listes -->
+<color id="windowBackgroundColor" color="#ffe600"/>                  <!-- [supposé] Fond de fenêtre (la plupart des fonds viennent en fait des images textures/NP-window-*) -->
+<color id="evenCellColor"        color="#c9a69d"/>                       <!-- [supposé] Lignes paires des listes -->
 <color id="oddCellColor"         color="#bdb594"/>                         <!-- [supposé] Lignes impaires des listes -->
 <color id="selectedCellColor" color="#7a4a1e"/>                      <!-- [supposé] Ligne sélectionnée -->
 <color id="mouseOverCellColor"       color="#a39a7c"/>                   <!-- [supposé] Ligne survolée -->
 <color id="pressedLightColor" color="#5e5444"/>                      <!-- [supposé] Élément clair appuyé -->
-<color id="darkOddCellColor"     color="#c9bf9d"/>                   <!-- [supposé] Lignes impaires (listes sombres) -->
+
+
+
+<color id="darkOddCellColor"     color="#c99d9d"/>                   <!-- [supposé] Lignes impaires (listes sombres) -->
 <color id="darkEvenCellColor"    color="#bdb594"/>                     <!-- [supposé] Lignes paires (listes sombres) -->
 <color id="darkSelectedCellColor" color="#7a4a1e"/>                  <!-- [supposé] Ligne sélectionnée (listes sombres) -->
 <color id="darkMouseOverCellColor"   color="#a39a7c"/>              <!-- [supposé] Ligne survolée (listes sombres) -->
 <color id="scrollEvenCellColor"  color="#c9bf9d"/>                 <!-- [supposé] Lignes paires (listes déroulantes) -->
 <color id="scrollOddCellColor"   color="#c9bf9d"/>                  <!-- [supposé] Lignes impaires (listes déroulantes) -->
+
+
+
+
+
 <color id="scrollSelectedCellColor" color="#7a4a1e"/>                <!-- [supposé] Ligne sélectionnée (listes déroulantes) -->
 <color id="scrollMouseOverCellColor" color="#a39a7c"/>            <!-- [supposé] Ligne survolée (listes déroulantes) -->
 <color id="detailedCellColor"    color="#c9bf9d"/>                   <!-- [supposé] Ligne de détail -->
@@ -91,12 +111,31 @@
 <color id="listFilterColor" color="#B7C9D3FF"/>                      <!-- [supposé] Filtre de liste -->
 <color id="fleaEvenCellColor" color="#3e3628"/>                      <!-- [supposé] Hôtel de vente : lignes paires -->
 <color id="fleaOddCellColor" color="#4a4236"/>                       <!-- [supposé] Hôtel de vente : lignes impaires -->
+
+
+
+
+
+
+
+
+
 <color id="marketTableEvenCellColor" color="#ffffff0d"/>             <!-- [supposé] Marché : lignes paires (voile très léger) -->
 <color id="marketTableOddCellColor" color="#0000000d"/>              <!-- [supposé] Marché : lignes impaires (voile très léger) -->
 <color id="fightReportEvenCellColor" color="#3e3628"/>               <!-- [supposé] Rapport de combat : lignes paires -->
 <color id="fightReportOddCellColor" color="#4a4236"/>                <!-- [supposé] Rapport de combat : lignes impaires -->
 <color id="craftFeeTextEditorBackgroundOddColor" color="#4a4236"/>   <!-- [supposé] Artisanat (frais) : fond de champ, lignes impaires -->
 <color id="craftFeeTextEditorBackgroundEvenColor" color="#3e3628"/>  <!-- [supposé] Artisanat (frais) : fond de champ, lignes paires -->
+
+
+
+
+
+
+
+
+
+
 <color id="craftFeeDefinedOddPriceColor" color="#ffffff"/>           <!-- [supposé] Artisanat : prix défini (impair) -->
 <color id="craftFeeDefinedEvenPriceColor" color="#ffffff"/>          <!-- [supposé] Artisanat : prix défini (pair) -->
 <color id="craftFeeInheritedOddPriceColor" color="#fffef2b3"/>       <!-- [supposé] Artisanat : prix hérité (impair) -->
@@ -105,6 +144,10 @@
 <color id="craftFeeNonDefinedEvenPriceColor" color="#ffffff"/>       <!-- [supposé] Artisanat : prix non défini (pair) -->
 <color id="tableCellBorderColor" color="#3e3628"/>                   <!-- [supposé] Bordure des cellules de tableau -->
 <color id="defaultDarkGreyColor" color="#3e3628"/>                   <!-- [supposé] Fond gris foncé générique -->
+
+
+
+
 <color id="lightGreyTransparentColor" color="#ffffff00"/>            <!-- [supposé] Gris clair transparent -->
 <color id="chalkboardBackgroundColor" color="#3e3628"/>              <!-- [supposé] Fond « tableau noir » -->
 <color id="chalkboardBorderColor" color="#3e3628"/>                  <!-- [supposé] Bordure « tableau noir » -->
@@ -112,13 +155,24 @@
 <color id="scrollTitleBackgroundColorLight" color="#ffffff"/>        <!-- [supposé] Fond des titres de liste déroulante (clair) -->
 <color id="dungeonLadderRankingColor" color="#3e3628"/>              <!-- [supposé] Classement de donjon : ligne classée -->
 <color id="dungeonLadderNoRankColor" color="#3e3628"/>               <!-- [supposé] Classement de donjon : ligne non classée -->
-<color id="dungeonLadderSeparatorColor" color="#5e544400"/>          <!-- [supposé] Classement de donjon : séparateur -->
+
+
+
+<color id="dungeonLadderSeparatorColor" color="#f3000000"/>          <!-- [supposé] Classement de donjon : séparateur -->
 <color id="heroGradientFirstColor" color="#4a4236"/>                 <!-- [supposé] Héros : dégradé (début) -->
 <color id="heroGradientSecondColor" color="#3e3628"/>                <!-- [supposé] Héros : dégradé (fin) -->
 <color id="companionGradientFirstColor" color="#4a4236"/>            <!-- [supposé] Compagnons : dégradé (début) -->
 <color id="companionGradientSecondColor" color="#3e3628"/>           <!-- [supposé] Compagnons : dégradé (fin) -->
 <color id="enabledHeroSlotColor" color="#e0701a80"/>                 <!-- [supposé] Emplacement de héros actif -->
 <color id="disabledHeroSlotColor" color="#ffffff00"/>                <!-- [supposé] Emplacement de héros inactif -->
+
+
+
+
+
+
+
+
 <color id="mysteryBoxItemBackgroundColor" color="#3e3628"/>          <!-- [supposé] Boîte mystère : fond d'objet -->
 <color id="backgroundBookColor" color="#492B11FF"/>                  <!-- [supposé] Fond des livres -->
 <color id="black75" color="#181612bf"/>                              <!-- [supposé] Voile noir 75 % (fonds semi-transparents) -->
@@ -228,7 +282,7 @@
 <color id="webShopOgrinePriceColor" color="#2fb1be"/>                       <!-- [supposé] Boutique : prix en Ogrines -->
 <color id="webShopOgrinePriceSaleColor" color="#2fb1be"/>                   <!-- [supposé] Boutique : prix soldé en Ogrines -->
 <color id="webShopOgrineAmountColor" color="#2fb1be"/>                      <!-- [supposé] Boutique : solde d'Ogrines -->
-
+                                                                                                                                                                                                                                                                    
 <!-- ===== NATIONS, TERRITOIRES ET LOIS ===== -->
 <color id="neutralTerritoryMapColor" color="#FFFFFFFF"/>  <!-- [supposé] Carte : territoire neutre -->
 <color id="amaknaTerritoryMapColor" color="#FCAD33FF"/>   <!-- [supposé] Carte : Amakna -->
@@ -262,5 +316,9 @@
 <color id="yellowScoreColor" color="#fcd74d"/>               <!-- [supposé] Score (jaune) -->
 <color id="scrollYellowColor" color="#EACC6BFF"/>            <!-- [supposé] Parchemin jaune -->
 <color id="scrollFleshColor" color="#EFDBA8FF"/>             <!-- [supposé] Parchemin couleur chair -->
-<color id="scroolfleshcolor" color="#e83aee"/>               <!-- [supposé] Variante (faute de frappe d'origine) de scrollFleshColor -->
+
+
 </colors>
+
+
+

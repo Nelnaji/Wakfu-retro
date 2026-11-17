@@ -1,324 +1,258 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!--
-  colors.xml commenté — thème [Retro]
-  Légende : [vérifié] confirmé par le thème de diagnostic
-            [observé] constaté dans les captures après un changement
-            [supposé] déduit du nom, non confirmé
-  Format des couleurs : #RRGGBB ou #RRGGBBAA (AA = transparence, 00 transparent -> ff opaque).
-  Attention : une couleur s'applique partout où le jeu l'utilise (pas d'écran par écran).
+  colors.xml — thème [Retro] · cartographie terminée
+  [vérifié] trouvé en jeu · [observé] constaté · [non trouvée] cherchée sans succès · [inutilisée] absente du code du jeu
+  Format : #RRGGBB ou #RRGGBBAA (pas de rgb(...)). Détails : docs/PALETTE.md
 -->
 <colors>
 
-<!-- ===== TEXTES PRINCIPAUX — ces couleurs sont partagées par presque toutes les fenêtres ===== -->
-<color id="mainTextLightColor" color="#ffffff"/>                <!-- [vérifié] TEXTE PRINCIPAL : texte des fenêtres (stats, options), titres des en-têtes (« Personnage », « Inventaire »), titre ET texte des infobulles d'objets, quantités dans l'inventaire, valeurs des menus déroulants -->
-
-
-<!-- ===== CANAUX DU CHAT — couleurs Dofus Retro (fond parchemin) ===== -->
-<color id="vicinityChannelColor"         color="#d6d6d6"/> <!-- Général : noir -->
-<color id="privateChannelColor"          color="#0066ff"/> <!-- Privé : bleu vif -->
-<color id="partyChannelColor"            color="#53c6ff"/> <!-- Groupe : bleu plus sombre -->
-<color id="guildChannelColor"            color="#a655f8"/> <!-- Guilde : violet -->
-<color id="tradeChannelColor"            color="#e06e10"/> <!-- Commerce : brun -->
-<!-- ===== COMMUNAUTÉ : rose Retro, teinté selon la langue ===== -->
-<color id="frCommunityChannelColor"   color="#679bfd"/> <!-- FR : rose tirant vers le bleu (violine) -->
-<color id="enCommunityChannelColor"   color="#936ef8"/> <!-- EN : rose tirant vers le rouge (framboise) -->
-<color id="esCommunityChannelColor"   color="#fc7e7e"/> <!-- ES : rose tirant vers l'orange (corail) -->
-<color id="ptCommunityChannelColor"   color="#d0ff78"/> <!-- PT : rose tirant vers le vert (vieux rose) -->
-
-<!-- ===== RECRUTEMENT : gris Retro, teinté selon la langue ===== -->
-<color id="frRecruitmentChannelColor" color="#bacff8"/> <!-- FR : gris bleuté -->
-<color id="enRecruitmentChannelColor" color="#c8b5fc"/> <!-- EN : gris rougeâtre -->
-<color id="esRecruitmentChannelColor" color="#ffc0c0"/> <!-- ES : gris orangé -->
-<color id="ptRecruitmentChannelColor" color="#e9ffbf"/> <!-- PT : gris verdâtre -->
-
-
-<color id="politicChannelColor"          color="#ffc400"/> <!-- Politique / nation : orange (alignement Retro) -->
-<color id="battlegroundChannelColor"     color="#ff3c00"/> <!-- Zone PvP : orange aussi (c'est de l'alignement) -->
-<color id="intergameChannelColor"        color="#a3005a"/> <!-- Discussion Ankama : framboise (« rencontres » de Retro) -->
-<color id="informationChannelColor"      color="#009900"/> <!-- Informations : vert -->
-<color id="fightInformationChannelColor" color="#009900"/> <!-- Combat : vert -->
-<color id="errorChannelColor"            color="#bd0000"/> <!-- Erreurs / alertes : rouge -->
-<color id="secondTextLightColor" color="#ffffff"/>            <!-- [vérifié] Titres de section (« Combat », « Jouabilité », « Builds »), texte secondaire (« Steamer », « Prix moy. », XP, « Niv. 20 ») -->
-<color id="mainTextTitleColor" color="#f2ead0"/>            <!-- [vérifié] Libellés des cases à cocher, onglets inactifs, texte dans les champs de saisie, « Remettre à zéro », montant de kamas -->
-<color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Texte des infobulles d'aide (raccourcis, Havre-Sac), titre de l'infobulle des aptitudes, PV dans le cœur -->
-<color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Texte sur petites étiquettes claires : rareté (« Légendaire »), « Actif » -->
+<!-- ===== TEXTES — règle : texte avec contour = clair, texte sans contour = foncé ===== -->
+<color id="mainTextLightColor" color="#ffffff"/>                <!-- [vérifié] Texte principal : fenêtres, titres d'en-tête, infobulles d'objets, quantités -->
+<color id="secondTextLightColor" color="#ffffff"/>              <!-- [vérifié] Titres de section, texte secondaire, en-têtes de colonnes (classement donjons), « Niv. » — texte à contour -->
+<color id="mainTextTitleColor" color="#f2ead0"/>                <!-- [vérifié] Champ de saisie du chat, cases cochées, onglets inactifs, champs de saisie, kamas -->
+<color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Infobulles d'aide, titre de l'infobulle des aptitudes, PV dans le cœur -->
+<color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Petites étiquettes claires : rareté (« Légendaire »), « Actif » -->
+<color id="defaultDarkColor" color="#4a2c17"/>                  <!-- [vérifié] Chocolat : texte du gouverneur, en-têtes de colonnes de la guilde, texte des bulles de dialogue -->
+<color id="defaultBlackColor" color="#2e2416"/>                 <!-- [vérifié] Brun foncé : interface du gouverneur, fond d'une barre d'XP -->
+<color id="whiteColor" color="#ffffff"/>                        <!-- [vérifié] Texte au-dessus des havre-sacs, texte du guide, menus -->
+<color id="mecanicBlueColor" color="#ffffff"/>                  <!-- [vérifié] Sélection des héros (gestion du compte), texte de la guilde -->
+<color id="mecanicDarkBlueColor" color="#3e2a1a"/>              <!-- [vérifié] Nom du métier (page métiers), texte des nations / champ de bataille (sans contour) -->
+<color id="passportTitleColor" color="#5a4630"/>                <!-- [vérifié] Titres de l'interface du passeport -->
+<color id="secondaryLight" color="#c4560f"/>                    <!-- [vérifié] Chiffre et picto d'XP (fiche perso), XP des quêtes -->
+<color id="loadingTextColor" color="#e2dcbb"/>                  <!-- [vérifié] Texte de chargement avant l'entrée sur le serveur -->
+<color id="defaultDisabledColor" color="#c4560f"/>              <!-- [vérifié] Boutons « Appliquer » et « Ajouter un grade » (guilde) -->
 <color id="white50" color="#FFFFFF7F"/>                         <!-- [vérifié] Texte du bouton « Enregistrer » (builds) -->
-<color id="thirdTextColor" color="#FFFFFF7F"/>                  <!-- [vérifié] Valeur « Restants » (aptitudes), texte tertiaire -->
-<color id="textDarkTextEditorColor" color="#E5DDCCCC"/>         <!-- [observé] Texte du HUD : niveau à côté du cœur, quantités dans la barre de raccourcis -->
+<color id="thirdTextColor" color="#FFFFFF7F"/>                  <!-- [vérifié] Valeur « Restants » (aptitudes) -->
+<color id="textDarkTextEditorColor" color="#E5DDCCCC"/>         <!-- [observé] HUD : niveau à côté du cœur, quantités de la barre de raccourcis -->
+<color id="blackColor" color="#ffffff"/>                        <!-- [à confirmer] Peut-être les libellés du gouverneur -->
+<color id="disabledTextColor" color="#ffffffb2"/>               <!-- [non testée] Texte désactivé (158 fichiers : la plus répandue, à cartographier) -->
+<color id="mecanicLightBlueColor" color="#AAD6D3FF"/>           <!-- [non trouvée] — -->
+<color id="neutralStateColor" color="#ffffff"/>                 <!-- [non trouvée] — -->
+<color id="positiveStateColor" color="#46a324"/>                <!-- [non trouvée] — -->
+<color id="negativeStateColor" color="#d6454a"/>                <!-- [non trouvée] — -->
+<color id="achievementCategoryCompleteColor" color="#ffffff"/>  <!-- [non trouvée] — -->
+<color id="importantTextColor" color="#e7d2a6"/>                <!-- [non trouvée] — -->
+<color id="descriptionPopupColor" color="#ffe186"/>             <!-- [non trouvée] — -->
+<color id="questObjectiveColor" color="#ffe186"/>               <!-- [non trouvée] Utilisée par le code (13 fichiers) : écran rare -->
+<color id="informationMessageTitleColor" color="#EFCC0AFF"/>    <!-- [non trouvée] — -->
+<color id="tooltipLinkColor" color="#F4D89EFF"/>                <!-- [non trouvée] — -->
+<color id="popupInformationColor" color="#A9A9A9FF"/>           <!-- [non trouvée] — -->
+<color id="selectionDarkTextEditorColor" color="#E5E5E5FF"/>    <!-- [non trouvée] — -->
+<color id="pressedBlackColor" color="#B2B2B2FF"/>               <!-- [non trouvée] — -->
+<color id="greyColor" color="#ffffff"/>                         <!-- [inutilisée] Absente du code du jeu -->
 
+<!-- ===== LISTES ET TABLEAUX — teintes de la fiche perso pour toutes les listes (provisoire, contraste à tester) ===== -->
+<color id="marketTableEvenCellColor" color="#ffffff0d"/>             <!-- [vérifié] Toutes les listes internes des interfaces récentes (fiche, aptitudes, infobulles, HDV) : voile clair -->
+<color id="marketTableOddCellColor" color="#0000000d"/>              <!-- [vérifié] Idem : voile sombre -->
+<color id="evenCellColor" color="#a8a388"/>                          <!-- [vérifié] Lignes paires : guilde, champ de bataille, métiers -->
+<color id="oddCellColor" color="#9b967c"/>                           <!-- [vérifié] Lignes impaires : guilde, champ de bataille, métiers -->
+<color id="selectedCellColor" color="#c4560f"/>                      <!-- [vérifié] Ligne sélectionnée (mêmes listes) -->
+<color id="mouseOverCellColor" color="#bdb594"/>                     <!-- [vérifié] Ligne survolée (mêmes listes) -->
+<color id="pressedLightColor" color="#c55913"/>                      <!-- [vérifié] Élément surligné du menu déroulant (champ de bataille) -->
+<color id="listHighlightColor" color="#e0701a"/>                     <!-- [vérifié] Élément sélectionné dans tous les menus déroulants (interfaces récentes) -->
+<color id="darkEvenCellColor" color="#a8a388"/>                      <!-- [vérifié] Lignes paires : nations (politique), « Trésorerie dilapidée » -->
+<color id="darkOddCellColor" color="#9b967c"/>                       <!-- [vérifié] Lignes impaires : nations (politique) -->
+<color id="scrollEvenCellColor" color="#a8a388"/>                    <!-- [vérifié] Lignes paires : classement Joueur contre Joueur (passeport) -->
+<color id="scrollOddCellColor" color="#9b967c"/>                     <!-- [vérifié] Lignes impaires : classement JcJ -->
+<color id="fightReportEvenCellColor" color="#a8a388"/>               <!-- [vérifié] Lignes paires : fin de combat (provisoire) -->
+<color id="fightReportOddCellColor" color="#9b967c"/>                <!-- [vérifié] Lignes impaires : fin de combat (provisoire) -->
+<color id="craftFeeTextEditorBackgroundEvenColor" color="#a8a388"/>  <!-- [vérifié] Champs de prix, lignes paires : frais d'artisanat (provisoire) -->
+<color id="craftFeeTextEditorBackgroundOddColor" color="#9b967c"/>   <!-- [vérifié] Champs de prix, lignes impaires : frais d'artisanat (provisoire) -->
+<color id="darkSelectedCellColor" color="#c4560f"/>                  <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="darkMouseOverCellColor" color="#bdb594"/>                 <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="scrollSelectedCellColor" color="#c4560f"/>                <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="scrollMouseOverCellColor" color="#bdb594"/>               <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="detailedCellColor" color="#a8a388"/>                      <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="listFilterColor" color="#5a4630"/>                        <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="fleaEvenCellColor" color="#a8a388"/>                      <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="fleaOddCellColor" color="#9b967c"/>                       <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="craftFeeDefinedOddPriceColor" color="#ffffff"/>           <!-- [non trouvée] Prix des frais d'artisanat -->
+<color id="craftFeeDefinedEvenPriceColor" color="#ffffff"/>          <!-- [non trouvée] Prix des frais d'artisanat -->
+<color id="craftFeeInheritedOddPriceColor" color="#f2ead0b3"/>       <!-- [non trouvée] Prix des frais d'artisanat -->
+<color id="craftFeeInheritedEvenPriceColor" color="#f2ead0b3"/>      <!-- [non trouvée] Prix des frais d'artisanat -->
+<color id="craftFeeNonDefinedOddPriceColor" color="#ffffff"/>        <!-- [non trouvée] Prix des frais d'artisanat -->
+<color id="craftFeeNonDefinedEvenPriceColor" color="#ffffff"/>       <!-- [non trouvée] Prix des frais d'artisanat -->
+<color id="tableCellBorderColor" color="#8c8368"/>                   <!-- [non trouvée] Utilisée par le code (5 fichiers) -->
+<color id="defaultDarkGreyColor" color="#3e3628"/>                   <!-- [non trouvée] Utilisée par le code (22 fichiers) -->
+<color id="windowBackgroundColor" color="#3e3628"/>                  <!-- [non trouvée] Les fonds viennent surtout des images textures/NP-window-* -->
+<color id="lightGreyTransparentColor" color="#ffffff00"/>            <!-- [vérifié] Certains messages (« tableau noir ») — plus tard : fond beige, texte noir -->
+<color id="chalkboardBackgroundColor" color="#3e3628"/>              <!-- [vérifié] Idem -->
+<color id="chalkboardBorderColor" color="#3e3628"/>                  <!-- [vérifié] Idem -->
+<color id="scrollTitleBackgroundColor" color="#3e362800"/>           <!-- [non trouvée] — -->
+<color id="scrollTitleBackgroundColorLight" color="#ffffff"/>        <!-- [non trouvée] — -->
+<color id="dungeonLadderRankingColor" color="#3e3628"/>              <!-- [non trouvée] — -->
+<color id="dungeonLadderNoRankColor" color="#3e3628"/>               <!-- [non trouvée] — -->
+<color id="dungeonLadderSeparatorColor" color="#5e544400"/>          <!-- [non trouvée] — -->
+<color id="mysteryBoxItemBackgroundColor" color="#3e3628"/>          <!-- [non testée] — -->
+<color id="backgroundBookColor" color="#492B11FF"/>                  <!-- [non testée] — -->
+<color id="black75" color="#181612bf"/>                              <!-- [non testée] Voile noir 75 % -->
 
-
-
-<color id="disabledTextColor" color="#ffffffb2"/>               <!-- [supposé] Texte désactivé / grisé -->
-<color id="defaultDarkColor" color="#c6fcc9"/>                  <!-- [supposé] Texte « foncé » par défaut (peu visible dans les tests) -->
-<color id="defaultBlackColor" color="#f8dada"/>                 <!-- [supposé] Texte « noir » par défaut (peu visible dans les tests) -->
-<color id="blackColor" color="#e4ffff"/>                        <!-- [supposé] Texte noir générique -->
-<color id="whiteColor" color="#FFFFFFFF"/>                      <!-- [supposé] Blanc générique -->
-<color id="greyColor" color="#ffffff"/>                         <!-- [supposé] Texte gris générique -->
-<color id="mecanicBlueColor" color="#ffffff"/>                  <!-- [supposé] Texte d'accent « mécanique » (Wakfu bleu) -->
-<color id="mecanicDarkBlueColor" color="#ffffff"/>              <!-- [supposé] Texte d'accent « mécanique » foncé -->
-<color id="mecanicLightBlueColor" color="#AAD6D3FF"/>           <!-- [supposé] Accent bleu clair -->
-<color id="passportTitleColor" color="#ffffff"/>                <!-- [supposé] Titres du passeport -->
-<color id="neutralStateColor" color="#ffffff"/>                 <!-- [supposé] Valeur neutre (ni bonus ni malus) -->
-<color id="positiveStateColor" color="#46a324"/>                <!-- [supposé] Valeur positive / bonus -->
-<color id="negativeStateColor" color="#d6454a"/>                <!-- [supposé] Valeur négative / malus -->
-
-
-<color id="achievementCategoryCompleteColor" color="#ffffff"/>  <!-- [supposé] Catégorie d'exploits terminée -->
-<color id="importantTextColor" color="#e7d2a6"/>                <!-- [supposé] Texte important / mis en avant -->
-<color id="descriptionPopupColor" color="#ffe186"/>             <!-- [supposé] Texte des popups de description -->
-<color id="questObjectiveColor" color="#ffe186"/>               <!-- [supposé] Objectifs de quête (suivi de quête) -->
-<color id="informationMessageTitleColor" color="#EFCC0AFF"/>    <!-- [supposé] Titre des messages d'information -->
-<color id="tooltipLinkColor" color="#F4D89EFF"/>                <!-- [supposé] Liens dans les infobulles / chat ([Objet]) -->
-<color id="popupInformationColor" color="#A9A9A9FF"/>           <!-- [supposé] Texte des popups d'information -->
-<color id="loadingTextColor" color="#BFBFBFFF"/>                <!-- [supposé] Texte de l'écran de chargement -->
-<color id="selectionDarkTextEditorColor" color="#E5E5E5FF"/>    <!-- [supposé] Texte sélectionné dans un champ de saisie -->
-<color id="defaultDisabledColor" color="#999999FF"/>            <!-- [supposé] Élément désactivé -->
-<color id="pressedBlackColor" color="#B2B2B2FF"/>               <!-- [supposé] Élément foncé appuyé -->
-<color id="secondaryLight" color="#c4560f"/>                 <!-- [supposé] Accent clair secondaire -->
-
-
-
-
-
-
-
-<!-- ===== FONDS DE FENÊTRES, LISTES ET TABLEAUX ===== -->
-<color id="windowBackgroundColor" color="#ffe600"/>                  <!-- [supposé] Fond de fenêtre (la plupart des fonds viennent en fait des images textures/NP-window-*) -->
-<color id="evenCellColor"        color="#c9a69d"/>                       <!-- [supposé] Lignes paires des listes -->
-<color id="oddCellColor"         color="#bdb594"/>                         <!-- [supposé] Lignes impaires des listes -->
-<color id="selectedCellColor" color="#7a4a1e"/>                      <!-- [supposé] Ligne sélectionnée -->
-<color id="mouseOverCellColor"       color="#a39a7c"/>                   <!-- [supposé] Ligne survolée -->
-<color id="pressedLightColor" color="#5e5444"/>                      <!-- [supposé] Élément clair appuyé -->
-
-
-
-<color id="darkOddCellColor"     color="#c99d9d"/>                   <!-- [supposé] Lignes impaires (listes sombres) -->
-<color id="darkEvenCellColor"    color="#bdb594"/>                     <!-- [supposé] Lignes paires (listes sombres) -->
-<color id="darkSelectedCellColor" color="#7a4a1e"/>                  <!-- [supposé] Ligne sélectionnée (listes sombres) -->
-<color id="darkMouseOverCellColor"   color="#a39a7c"/>              <!-- [supposé] Ligne survolée (listes sombres) -->
-<color id="scrollEvenCellColor"  color="#c9bf9d"/>                 <!-- [supposé] Lignes paires (listes déroulantes) -->
-<color id="scrollOddCellColor"   color="#c9bf9d"/>                  <!-- [supposé] Lignes impaires (listes déroulantes) -->
-
-
-
-
-
-<color id="scrollSelectedCellColor" color="#7a4a1e"/>                <!-- [supposé] Ligne sélectionnée (listes déroulantes) -->
-<color id="scrollMouseOverCellColor" color="#a39a7c"/>            <!-- [supposé] Ligne survolée (listes déroulantes) -->
-<color id="detailedCellColor"    color="#c9bf9d"/>                   <!-- [supposé] Ligne de détail -->
-<color id="listHighlightColor" color="#e0701a"/>                     <!-- [supposé] Surbrillance dans les listes -->
-<color id="listFilterColor" color="#B7C9D3FF"/>                      <!-- [supposé] Filtre de liste -->
-<color id="fleaEvenCellColor" color="#3e3628"/>                      <!-- [supposé] Hôtel de vente : lignes paires -->
-<color id="fleaOddCellColor" color="#4a4236"/>                       <!-- [supposé] Hôtel de vente : lignes impaires -->
-
-
-
-
-
-
-
-
-
-<color id="marketTableEvenCellColor" color="#ffffff0d"/>             <!-- [supposé] Marché : lignes paires (voile très léger) -->
-<color id="marketTableOddCellColor" color="#0000000d"/>              <!-- [supposé] Marché : lignes impaires (voile très léger) -->
-<color id="fightReportEvenCellColor" color="#3e3628"/>               <!-- [supposé] Rapport de combat : lignes paires -->
-<color id="fightReportOddCellColor" color="#4a4236"/>                <!-- [supposé] Rapport de combat : lignes impaires -->
-<color id="craftFeeTextEditorBackgroundOddColor" color="#4a4236"/>   <!-- [supposé] Artisanat (frais) : fond de champ, lignes impaires -->
-<color id="craftFeeTextEditorBackgroundEvenColor" color="#3e3628"/>  <!-- [supposé] Artisanat (frais) : fond de champ, lignes paires -->
-
-
-
-
-
-
-
-
-
-
-<color id="craftFeeDefinedOddPriceColor" color="#ffffff"/>           <!-- [supposé] Artisanat : prix défini (impair) -->
-<color id="craftFeeDefinedEvenPriceColor" color="#ffffff"/>          <!-- [supposé] Artisanat : prix défini (pair) -->
-<color id="craftFeeInheritedOddPriceColor" color="#fffef2b3"/>       <!-- [supposé] Artisanat : prix hérité (impair) -->
-<color id="craftFeeInheritedEvenPriceColor" color="#fffef2b3"/>      <!-- [supposé] Artisanat : prix hérité (pair) -->
-<color id="craftFeeNonDefinedOddPriceColor" color="#ffffff"/>        <!-- [supposé] Artisanat : prix non défini (impair) -->
-<color id="craftFeeNonDefinedEvenPriceColor" color="#ffffff"/>       <!-- [supposé] Artisanat : prix non défini (pair) -->
-<color id="tableCellBorderColor" color="#3e3628"/>                   <!-- [supposé] Bordure des cellules de tableau -->
-<color id="defaultDarkGreyColor" color="#3e3628"/>                   <!-- [supposé] Fond gris foncé générique -->
-
-
-
-
-<color id="lightGreyTransparentColor" color="#ffffff00"/>            <!-- [supposé] Gris clair transparent -->
-<color id="chalkboardBackgroundColor" color="#3e3628"/>              <!-- [supposé] Fond « tableau noir » -->
-<color id="chalkboardBorderColor" color="#3e3628"/>                  <!-- [supposé] Bordure « tableau noir » -->
-<color id="scrollTitleBackgroundColor" color="#3e362800"/>           <!-- [supposé] Fond des titres de liste déroulante (transparent) -->
-<color id="scrollTitleBackgroundColorLight" color="#ffffff"/>        <!-- [supposé] Fond des titres de liste déroulante (clair) -->
-<color id="dungeonLadderRankingColor" color="#3e3628"/>              <!-- [supposé] Classement de donjon : ligne classée -->
-<color id="dungeonLadderNoRankColor" color="#3e3628"/>               <!-- [supposé] Classement de donjon : ligne non classée -->
-
-
-
-<color id="dungeonLadderSeparatorColor" color="#f3000000"/>          <!-- [supposé] Classement de donjon : séparateur -->
-<color id="heroGradientFirstColor" color="#4a4236"/>                 <!-- [supposé] Héros : dégradé (début) -->
-<color id="heroGradientSecondColor" color="#3e3628"/>                <!-- [supposé] Héros : dégradé (fin) -->
-<color id="companionGradientFirstColor" color="#4a4236"/>            <!-- [supposé] Compagnons : dégradé (début) -->
-<color id="companionGradientSecondColor" color="#3e3628"/>           <!-- [supposé] Compagnons : dégradé (fin) -->
-<color id="enabledHeroSlotColor" color="#e0701a80"/>                 <!-- [supposé] Emplacement de héros actif -->
-<color id="disabledHeroSlotColor" color="#ffffff00"/>                <!-- [supposé] Emplacement de héros inactif -->
-
-
-
-
-
-
-
-
-<color id="mysteryBoxItemBackgroundColor" color="#3e3628"/>          <!-- [supposé] Boîte mystère : fond d'objet -->
-<color id="backgroundBookColor" color="#492B11FF"/>                  <!-- [supposé] Fond des livres -->
-<color id="black75" color="#181612bf"/>                              <!-- [supposé] Voile noir 75 % (fonds semi-transparents) -->
+<!-- ===== HÉROS ET COMPAGNONS — tons chauds ===== -->
+<color id="heroGradientFirstColor" color="#e0701a"/>        <!-- [vérifié] Dégradé des vignettes de héros (haut) -->
+<color id="heroGradientSecondColor" color="#7a3a10"/>       <!-- [vérifié] Dégradé des vignettes de héros (bas) -->
+<color id="companionGradientFirstColor" color="#e0b84a"/>   <!-- [vérifié] Dégradé des vignettes de compagnons (haut) -->
+<color id="companionGradientSecondColor" color="#7a5a20"/>  <!-- [vérifié] Dégradé des vignettes de compagnons (bas) -->
+<color id="enabledHeroSlotColor" color="#e0701a80"/>        <!-- [vérifié] Emplacement où un héros / compagnon peut être ajouté -->
+<color id="disabledHeroSlotColor" color="#9c8a7a80"/>       <!-- [vérifié] Emplacement bloqué (pas en mode booster) -->
 
 <!-- ===== INFOBULLES ET SURVOL ===== -->
-<color id="tooltipBackgroundColor" color="#181612f2"/>    <!-- [observé] Fond des infobulles d'objets (Hôtel de vente, inventaire) -->
-<color id="tooltipBorderColor" color="#524a3cff"/>        <!-- [supposé] Bordure des infobulles -->
-<color id="mecanicBlueForHoverColor" color="#6b5a40"/>    <!-- [supposé] Couleur de survol (accent) -->
-<color id="previewButtonBorderColor" color="#3D999100"/>  <!-- [supposé] Bordure du bouton d'aperçu -->
+<color id="tooltipBackgroundColor" color="#181612f2"/>    <!-- [non trouvée] Le fond des infobulles vient des images TooltipBG-* -->
+<color id="tooltipBorderColor" color="#524a3c"/>          <!-- [non trouvée] — -->
+<color id="mecanicBlueForHoverColor" color="#6b5a40"/>    <!-- [non trouvée] — -->
+<color id="previewButtonBorderColor" color="#3D999100"/>  <!-- [non trouvée] — -->
 
-<!-- ===== CARACTÉRISTIQUES, ÉLÉMENTS ET JETS ===== -->
-<color id="characStandardColor"  color="#2f7d12"/>              <!-- [observé] Valeurs de caractéristiques positives (ex. « 23 % » en vert dans la fiche perso) -->
-<color id="legacyCharacStandardColor" color="#56AA56FF"/>        <!-- [supposé] Ancienne couleur des valeurs de caractéristiques -->
-<color id="characNegativeColor"  color="#b8281e"/>           <!-- [observé] Valeurs de caractéristiques négatives (ex. « -22 % » en rouge) -->
-<color id="defaultLightGoldColor" color="#F2A33FFF"/>            <!-- [vérifié] Jets améliorés dans les infobulles (lignes orange) -->
-<color id="defaultIntenseGoldColor" color="#FFC626FF"/>          <!-- [supposé] Or intense (valeurs mises en avant) -->
-<color id="fireColor"            color="#c4570f"/>                      <!-- [observé] Élément Feu (valeurs dans la fiche perso) -->
-<color id="waterColor"           color="#1b7fa8"/>                     <!-- [observé] Élément Eau -->
-<color id="earthColor"           color="#6b8a00"/>                     <!-- [observé] Élément Terre -->
-<color id="airColor"             color="#9b3fb5"/>                     <!-- [observé] Élément Air -->
-<color id="fireGradientColor"    color="#e0701aff"/> <!-- feu : orange brûlé -->
-<color id="waterGradientColor"   color="#2a9fd0ff"/> <!-- eau : bleu -->
-<color id="earthGradientColor"   color="#7fa300ff"/> <!-- terre : vert olive -->
-<color id="windGradientColor"    color="#b052d4ff"/> <!-- air : violet -->
-<color id="lightGradientColor"   color="#e0b800ff"/> <!-- lumière : or -->
-<color id="stasisGradientColor"  color="#d4207fff"/> <!-- stasis : framboise -->
-<color id="neutralGradientColor" color="#b4ac8dff"/> <!-- neutre : taupe -->
+<!-- ===== CARACTÉRISTIQUES, ÉLÉMENTS ET JETS — gameplay : codes historiques conservés ===== -->
+<color id="characStandardColor" color="#2f7d12"/>                <!-- [vérifié] Valeurs positives de la fiche -->
+<color id="characNegativeColor" color="#b8281e"/>                <!-- [vérifié] Valeurs négatives de la fiche -->
+<color id="legacyCharacStandardColor" color="#2f7d12"/>          <!-- [non trouvée] Sans doute les anciennes interfaces -->
+<color id="defaultLightGoldColor" color="#F2A33F"/>              <!-- [vérifié] Jets améliorés dans les infobulles -->
+<color id="defaultIntenseGoldColor" color="#FFC626"/>            <!-- [non testée] — -->
+<color id="fireColor" color="#c4570f"/>                          <!-- [observé] Feu -->
+<color id="waterColor" color="#1b7fa8"/>                         <!-- [observé] Eau -->
+<color id="earthColor" color="#6b8a00"/>                         <!-- [observé] Terre -->
+<color id="airColor" color="#9b3fb5"/>                           <!-- [observé] Air -->
+<color id="fireGradientColor" color="#e0701aff"/>                <!-- [non testée] — -->
+<color id="waterGradientColor" color="#2a9fd0ff"/>               <!-- [non testée] — -->
+<color id="earthGradientColor" color="#7fa300ff"/>               <!-- [non testée] — -->
+<color id="windGradientColor" color="#b052d4ff"/>                <!-- [non testée] — -->
+<color id="lightGradientColor" color="#e0b800ff"/>               <!-- [non testée] — -->
+<color id="stasisGradientColor" color="#d4207fff"/>              <!-- [non testée] — -->
+<color id="neutralGradientColor" color="#b4ac8dff"/>             <!-- [non testée] — -->
+<color id="HPColor" color="#d82b45"/>                            <!-- [observé] PV -->
+<color id="APColor" color="#328dda"/>                            <!-- [observé] PA -->
+<color id="MPColor" color="#2f8a2f"/>                            <!-- [observé] PM -->
+<color id="WPColor" color="#1f9e86"/>                            <!-- [observé] PW -->
+<color id="SPColor" color="#1A001AFF"/>                          <!-- [conservée] — -->
+<color id="QBColor" color="#FFBA00FF"/>                          <!-- [conservée] — -->
+<color id="APLightColor" color="#00AEEAFF"/>                     <!-- [conservée] — -->
+<color id="MPLightColor" color="#00B400FF"/>                     <!-- [conservée] — -->
+<color id="WPLightColor" color="#27B68EFF"/>                     <!-- [conservée] — -->
+<color id="ArmorColor" color="#3F7734"/>                         <!-- [conservée] — -->
+<color id="heartHPColor" color="#d82b45"/>                       <!-- [conservée] — -->
+<color id="heartArmorColor" color="#3F7734"/>                    <!-- [conservée] — -->
+<color id="levelColor" color="#936900FF"/>                       <!-- [conservée] — -->
+<color id="fightResistancesBackgroundColor" color="#181612e6"/>  <!-- [conservée] — -->
+<color id="fightResistancesTextColor" color="#fffef2"/>          <!-- [conservée] — -->
+<color id="fightMinResistancesTextColor" color="#fc4d55"/>       <!-- [conservée] — -->
+<color id="fightMaxResistancesTextColor" color="#3F7734"/>       <!-- [conservée] — -->
 
-<color id="HPColor" color="#d82b45"/>                            <!-- [observé] Points de vie (texte PV) -->
-<color id="APColor" color="#328dda"/>                            <!-- [observé] Points d'action (PA) -->
-<color id="MPColor"              color="#2f8a2f"/>                         <!-- [observé] Points de mouvement (PM) -->
-<color id="WPColor"              color="#1f9e86"/>                         <!-- [observé] Points de Wakfu (PW) -->
-<color id="SPColor" color="#1A001AFF"/>                          <!-- [supposé] Points de Stasis -->
-<color id="QBColor" color="#FFBA00FF"/>                          <!-- [supposé] Points de quête / bonus -->
-<color id="APLightColor" color="#00AEEAFF"/>                     <!-- [supposé] PA (variante claire) -->
-<color id="MPLightColor" color="#00B400FF"/>                     <!-- [supposé] PM (variante claire) -->
-<color id="WPLightColor" color="#27B68EFF"/>                     <!-- [supposé] PW (variante claire) -->
-<color id="ArmorColor" color="#3F7734"/>                         <!-- [supposé] Armure -->
-<color id="heartHPColor" color="#d82b45"/>                       <!-- [supposé] Cœur : partie vie -->
-<color id="heartArmorColor" color="#3F7734"/>                    <!-- [supposé] Cœur : partie armure -->
-<color id="levelColor" color="#936900FF"/>                       <!-- [supposé] Niveau -->
-<color id="fightResistancesBackgroundColor" color="#181612e6"/>  <!-- [supposé] Combat : fond du panneau des résistances -->
-<color id="fightResistancesTextColor" color="#fffef2"/>          <!-- [supposé] Combat : texte des résistances -->
-<color id="fightMinResistancesTextColor" color="#fc4d55"/>       <!-- [supposé] Combat : résistance minimale -->
-<color id="fightMaxResistancesTextColor" color="#3F7734"/>       <!-- [supposé] Combat : résistance maximale -->
+<!-- ===== JAUGES ET BARRES ===== -->
+<color id="xpColor" color="#e0701a"/>                          <!-- [vérifié] Barre d'XP de fin de combat, rang de la compagnie -->
+<color id="xpColorCompanion" color="#f5a623"/>                 <!-- [vérifié] Barre d'XP des compagnons -->
+<color id="xpUnpenalizedColor" color="#22798b"/>               <!-- [non testée] — -->
+<color id="xpPremiumColor" color="#ffa040"/>                   <!-- [non trouvée] Orangé -->
+<color id="ogrestColor" color="#c4560f"/>                      <!-- [non trouvée] Orangé -->
+<color id="wakfuColor" color="#47dbd3"/>                       <!-- [non trouvée] Bleu du Wakfu conservé -->
+<color id="wakfuBarColor" color="#4C4C4CFF"/>                  <!-- [non trouvée] D'origine -->
+<color id="stasisJaugeColor" color="#FC2DEFFF"/>               <!-- [non trouvée] D'origine -->
+<color id="progressBarDefaultColor" color="#E5E5E5FF"/>        <!-- [non trouvée] D'origine -->
+<color id="craftActionProgressBarColor" color="#e0701a"/>      <!-- [non trouvée] Orangé -->
+<color id="craftBackgroundProgressBarColor" color="#5a4030"/>  <!-- [non trouvée] Brun-orangé -->
+<color id="loadingWheelColor" color="#e2dcbb"/>                <!-- [vérifié] Roue de chargement avant la connexion -->
+<color id="loginGradientColor" color="#e2dcbb"/>               <!-- [non trouvée] Beige clair -->
+<color id="protectorColor" color="#62be25"/>                   <!-- [vérifié] Jauges de plantation (écosystème) -->
+<color id="spellDeckHighlightColor" color="#FFDD00FF"/>        <!-- [non trouvée] — -->
+<color id="playerTeamHPColor" color="#3333CCFF"/>              <!-- [conservée] Couleurs d'équipe : comme Retro -->
+<color id="enemyTeamHPColor" color="#CB0000FF"/>               <!-- [conservée] Couleurs d'équipe : comme Retro -->
 
-<!-- ===== JAUGES ET BARRES DE PROGRESSION ===== -->
-<color id="xpColor" color="#125462"/>                            <!-- [observé] Barre d'XP — aussi utilisée par la jauge S/W du HUD (l'avoir changée l'avait rendue orange) -->
-<color id="xpColorCompanion" color="#125462"/>                   <!-- [supposé] Barre d'XP des compagnons -->
-<color id="xpUnpenalizedColor" color="#22798b"/>                 <!-- [observé] XP non pénalisée — liée à la jauge S/W -->
-<color id="xpPremiumColor" color="#22798b"/>                     <!-- [supposé] XP premium -->
-<color id="ogrestColor" color="#125462"/>                        <!-- [supposé] Jauge d'Ogrest -->
-<color id="wakfuColor" color="#47dbd3"/>                         <!-- [supposé] Couleur Wakfu (jauge W) -->
-<color id="wakfuBarColor" color="#4C4C4CFF"/>                    <!-- [supposé] Fond de la barre Wakfu -->
-<color id="stasisJaugeColor" color="#FC2DEFFF"/>                 <!-- [supposé] Jauge de Stasis -->
-<color id="progressBarDefaultColor" color="#E5E5E5FF"/>          <!-- [supposé] Barre de progression par défaut -->
-<color id="craftActionProgressBarColor" color="#60FFEAFF"/>      <!-- [supposé] Artisanat : barre de progression -->
-<color id="craftBackgroundProgressBarColor" color="#6D6B5EFF"/>  <!-- [supposé] Artisanat : fond de barre -->
-<color id="loadingWheelColor" color="#ffffff"/>                  <!-- [supposé] Roue de chargement -->
-<color id="loginGradientColor" color="#E5DACEFF"/>               <!-- [supposé] Dégradé de l'écran de connexion -->
-<color id="playerTeamHPColor" color="#3333CCFF"/>                <!-- [supposé] Barre de vie de votre équipe -->
-<color id="enemyTeamHPColor" color="#CB0000FF"/>                 <!-- [supposé] Barre de vie de l'équipe ennemie -->
-<color id="protectorColor" color="#62be25"/>                     <!-- [supposé] Protecteur de territoire -->
-<color id="spellDeckHighlightColor" color="#FFDD00FF"/>          <!-- [supposé] Surbrillance du deck de sorts -->
+<!-- ===== COMBAT — identique à Dofus Retro, on n'y touche pas ===== -->
+<color id="fightRangeColor" color="#116fb8D9"/>                        <!-- [conservée] -->
+<color id="fightRangeColorWithConstraints" color="#b02222bf"/>         <!-- [conservée] -->
+<color id="fightRangeColorWithoutLineOfSight" color="#141c2cbf"/>      <!-- [conservée] -->
+<color id="fightZoneEffectColor" color="#e7d2a6D9"/>                   <!-- [conservée] -->
+<color id="fightZoneAdditionalEffectColor" color="#e7d2a6D9"/>         <!-- [conservée] -->
+<color id="fightEmptyCellNeededColor" color="#e7d2a6D9"/>              <!-- [conservée] -->
+<color id="fightPathColor" color="#4ba839cc"/>                         <!-- [conservée] -->
+<color id="fightPathErrorColor" color="#b02222bf"/>                    <!-- [conservée] -->
+<color id="fightExternalCellsLightModifier" color="#7F7F7F7F"/>        <!-- [conservée] -->
+<color id="team1PlacementCellColor" color="#d82b45D9"/>                <!-- [conservée] -->
+<color id="team2PlacementCellColor" color="#116fb8D9"/>                <!-- [conservée] -->
+<color id="fightRedTeamTimelineColor" color="#FFA323FF"/>              <!-- [conservée] -->
+<color id="fightRedTeamTimelineHighlightedColor" color="#EAE84CFF"/>   <!-- [conservée] -->
+<color id="fightBlueTeamTimelineColor" color="#8EF2E8FF"/>             <!-- [conservée] -->
+<color id="fightBlueTeamTimelineHighlightedColor" color="#EAE84CFF"/>  <!-- [conservée] -->
+<color id="timelineOrangeOverlayColor" color="#3e362800"/>             <!-- [inutilisée] Absente du code du jeu -->
+<color id="timelineRedOverlayColor" color="#3e362800"/>                <!-- [inutilisée] Absente du code du jeu -->
+<color id="battlegroundAttackTeamScoreColor" color="#FF0000FF"/>       <!-- [conservée] -->
+<color id="battlegroundDefenseTeamScoreColor" color="#00FFFFFF"/>      <!-- [conservée] -->
 
-<!-- ===== COMBAT (cases, portées, timeline) ===== -->
-<color id="fightRangeColor" color="#116fb8D9"/>                        <!-- [supposé] Portée d'un sort -->
-<color id="fightRangeColorWithConstraints" color="#b02222bf"/>         <!-- [supposé] Portée avec contraintes -->
-<color id="fightRangeColorWithoutLineOfSight" color="#141c2cbf"/>      <!-- [supposé] Portée sans ligne de vue -->
-<color id="fightZoneEffectColor" color="#e7d2a6D9"/>                   <!-- [supposé] Zone d'effet -->
-<color id="fightZoneAdditionalEffectColor" color="#e7d2a6D9"/>         <!-- [supposé] Zone d'effet additionnelle -->
-<color id="fightEmptyCellNeededColor" color="#e7d2a6D9"/>              <!-- [supposé] Case vide requise -->
-<color id="fightPathColor" color="#4ba839cc"/>                         <!-- [supposé] Chemin de déplacement -->
-<color id="fightPathErrorColor" color="#b02222bf"/>                    <!-- [supposé] Chemin impossible -->
-<color id="fightExternalCellsLightModifier" color="#7F7F7F7F"/>        <!-- [supposé] Assombrissement des cases hors zone -->
-<color id="team1PlacementCellColor" color="#d82b45D9"/>                <!-- [supposé] Cases de placement équipe 1 (rouge) -->
-<color id="team2PlacementCellColor" color="#116fb8D9"/>                <!-- [supposé] Cases de placement équipe 2 (bleu) -->
-<color id="fightRedTeamTimelineColor" color="#FFA323FF"/>              <!-- [supposé] Timeline : équipe rouge -->
-<color id="fightRedTeamTimelineHighlightedColor" color="#EAE84CFF"/>   <!-- [supposé] Timeline : équipe rouge (surbrillance) -->
-<color id="fightBlueTeamTimelineColor" color="#8EF2E8FF"/>             <!-- [supposé] Timeline : équipe bleue -->
-<color id="fightBlueTeamTimelineHighlightedColor" color="#EAE84CFF"/>  <!-- [supposé] Timeline : équipe bleue (surbrillance) -->
-<color id="timelineOrangeOverlayColor" color="#3e362800"/>             <!-- [supposé] Timeline : voile orange -->
-<color id="timelineRedOverlayColor" color="#3e362800"/>                <!-- [supposé] Timeline : voile rouge -->
-<color id="battlegroundAttackTeamScoreColor" color="#FF0000FF"/>       <!-- [supposé] Champ de bataille : score attaquants -->
-<color id="battlegroundDefenseTeamScoreColor" color="#00FFFFFF"/>      <!-- [supposé] Champ de bataille : score défenseurs -->
+<!-- ===== RARETÉS — d'origine (chantier futur : à ajuster avec itemsRarityBorders/) ===== -->
+<color id="oldRarityColor" color="#A5AAA0"/>        <!-- [vérifié] -->
+<color id="commonRarityColor" color="#FFFFFF"/>     <!-- [vérifié] -->
+<color id="rareRarityColor" color="#12FF89"/>       <!-- [vérifié] -->
+<color id="mythicRarityColor" color="#E27A00"/>     <!-- [vérifié] -->
+<color id="legendaryRarityColor" color="#D8EA00"/>  <!-- [vérifié] -->
+<color id="relicRarityColor" color="#A35EFF"/>      <!-- [vérifié] -->
+<color id="souvenirRarityColor" color="#16AAFF"/>   <!-- [vérifié] -->
+<color id="epicRarityColor" color="#FF5EBC"/>       <!-- [vérifié] -->
+<color id="adminRarityColor" color="#D83F3FFF"/>    <!-- [vérifié] -->
 
-<!-- ===== RARETÉS D'OBJETS ===== -->
-<color id="oldRarityColor" color="#A5AAA0"/>        <!-- [supposé] Rareté : ancien -->
-<color id="commonRarityColor" color="#FFFFFF"/>     <!-- [supposé] Rareté : commun -->
-<color id="rareRarityColor" color="#12FF89"/>       <!-- [supposé] Rareté : rare -->
-<color id="mythicRarityColor" color="#E27A00"/>     <!-- [supposé] Rareté : mythique -->
-<color id="legendaryRarityColor" color="#D8EA00"/>  <!-- [supposé] Rareté : légendaire -->
-<color id="relicRarityColor" color="#A35EFF"/>      <!-- [supposé] Rareté : relique -->
-<color id="souvenirRarityColor" color="#16AAFF"/>   <!-- [supposé] Rareté : souvenir -->
-<color id="epicRarityColor" color="#FF5EBC"/>       <!-- [supposé] Rareté : épique -->
-<color id="adminRarityColor" color="#D83F3FFF"/>    <!-- [supposé] Rareté : admin -->
+<!-- ===== BOUTIQUE ===== -->
+<color id="webShopBackgroundColor" color="#ffffff"/>                      <!-- [vérifié] Sigle € -->
+<color id="webShopHighlightColor" color="#514a3ce1"/>                     <!-- [proposition] Panneau de la bannière (à vérifier) -->
+<color id="webShopMoneyPriceSaleColor" color="#ffffff"/>                  <!-- [proposition] Texte des prix en € (à vérifier) -->
+<color id="webShopMoneyPriceBackgroundColor" color="#e0701a"/>            <!-- [proposition] Fond des prix en € (à vérifier) -->
+<color id="webShopPriceBackgroundColor" color="#c4560f"/>                 <!-- [proposition] Étiquettes de nom des packs ? (à vérifier) -->
+<color id="webShopMoneyPriceColor" color="#e0701aab"/>                    <!-- [proposition] À identifier -->
+<color id="webShopOgrineAmountColor" color="#2fb1be"/>                    <!-- [vérifié] Solde d'Ogrines : d'origine -->
+<color id="webShopNotEnoughOgrinePriceColor" color="#ff7a6a"/>            <!-- [vérifié] Prix en Ogrines si solde insuffisant -->
+<color id="webShopNotEnoughOgrinePriceBackgroundColor" color="#514a3c"/>  <!-- [vérifié] Fond de ce prix -->
+<color id="webShopOgrinePriceColor" color="#2fb1be"/>                     <!-- [non trouvée] Prix si solde suffisant ? -->
+<color id="webShopOgrinePriceSaleColor" color="#2fb1be"/>                 <!-- [non trouvée] — -->
 
-<!-- ===== BOUTIQUE (Ogrines) ===== -->
-<color id="webShopBackgroundColor" color="#ffffff"/>                        <!-- [supposé] Boutique : fond -->
-<color id="webShopHighlightColor" color="#3e362866"/>                       <!-- [supposé] Boutique : surbrillance -->
-<color id="webShopMoneyPriceColor" color="#ffffff00"/>                      <!-- [supposé] Boutique : prix en argent -->
-<color id="webShopMoneyPriceSaleColor" color="#e7d2a6"/>                    <!-- [supposé] Boutique : prix soldé -->
-<color id="webShopPriceBackgroundColor" color="#ffffff00"/>                 <!-- [supposé] Boutique : fond du prix -->
-<color id="webShopMoneyPriceBackgroundColor" color="#ffffff00"/>            <!-- [supposé] Boutique : fond du prix en argent -->
-<color id="webShopNotEnoughOgrinePriceColor" color="#ffffff33"/>            <!-- [supposé] Boutique : pas assez d'Ogrines -->
-<color id="webShopNotEnoughOgrinePriceBackgroundColor" color="#ffffff00"/>  <!-- [supposé] Boutique : fond « pas assez d'Ogrines » -->
-<color id="webShopOgrinePriceColor" color="#2fb1be"/>                       <!-- [supposé] Boutique : prix en Ogrines -->
-<color id="webShopOgrinePriceSaleColor" color="#2fb1be"/>                   <!-- [supposé] Boutique : prix soldé en Ogrines -->
-<color id="webShopOgrineAmountColor" color="#2fb1be"/>                      <!-- [supposé] Boutique : solde d'Ogrines -->
-                                                                                                                                                                                                                                                                    
-<!-- ===== NATIONS, TERRITOIRES ET LOIS ===== -->
-<color id="neutralTerritoryMapColor" color="#FFFFFFFF"/>  <!-- [supposé] Carte : territoire neutre -->
-<color id="amaknaTerritoryMapColor" color="#FCAD33FF"/>   <!-- [supposé] Carte : Amakna -->
-<color id="bontaTerritoryMapColor" color="#0AAAFFFF"/>    <!-- [supposé] Carte : Bonta -->
-<color id="brakmarTerritoryMapColor" color="#991416FF"/>  <!-- [supposé] Carte : Brâkmar -->
-<color id="sufokiaTerritoryMapColor" color="#DB42D8FF"/>  <!-- [supposé] Carte : Sufokia -->
-<color id="friendlyNationColor" color="#66FF66FF"/>       <!-- [supposé] Nation alliée -->
-<color id="enemyNationColor" color="#FF6666FF"/>          <!-- [supposé] Nation ennemie -->
-<color id="territoryNameColor" color="#FFFF66FF"/>        <!-- [supposé] Nom de territoire -->
-<color id="gainLaurelLawColor" color="#D1F951FF"/>        <!-- [supposé] Lois : gain de lauriers -->
-<color id="lossLaurelLawColor" color="#FC491CFF"/>        <!-- [supposé] Lois : perte de lauriers -->
-<color id="guildPointsColor" color="#DD6800FF"/>          <!-- [supposé] Points de guilde -->
+<!-- ===== CARTE, NATIONS, LOIS — d'origine ===== -->
+<color id="neutralTerritoryMapColor" color="#FFFFFFFF"/>  <!-- [vérifié] Carte -->
+<color id="amaknaTerritoryMapColor" color="#FCAD33FF"/>   <!-- [vérifié] Carte -->
+<color id="bontaTerritoryMapColor" color="#0AAAFFFF"/>    <!-- [vérifié] Carte -->
+<color id="brakmarTerritoryMapColor" color="#991416FF"/>  <!-- [vérifié] Carte -->
+<color id="sufokiaTerritoryMapColor" color="#DB42D8FF"/>  <!-- [vérifié] Carte -->
+<color id="friendlyNationColor" color="#66FF66FF"/>       <!-- [vérifié] Carte -->
+<color id="enemyNationColor" color="#FF6666FF"/>          <!-- [vérifié] Carte -->
+<color id="territoryNameColor" color="#FFFF66FF"/>        <!-- [vérifié] Carte -->
+<color id="gainLaurelLawColor" color="#D1F951FF"/>        <!-- [conservée] Peut-être à adapter plus tard -->
+<color id="lossLaurelLawColor" color="#FC491CFF"/>        <!-- [conservée] Peut-être à adapter plus tard -->
+<color id="guildPointsColor" color="#DD6800FF"/>          <!-- [vérifié] Points de guilde -->
 
-<!-- ===== DIVERS (états, serveurs, taxes, couleurs génériques) ===== -->
-<color id="serverOnlineColor" color="#62be25"/>              <!-- [supposé] Serveur en ligne -->
-<color id="serverUnavailableColor" color="#fc4d55"/>         <!-- [supposé] Serveur indisponible -->
-<color id="serverDifferentVersion" color="#fc4d55"/>         <!-- [supposé] Serveur : version différente -->
-<color id="highTaxColor" color="#fc4d55"/>                   <!-- [supposé] Taxe élevée -->
-<color id="mediumTaxColor" color="#ff9900"/>                 <!-- [supposé] Taxe moyenne -->
-<color id="lowTaxColor" color="#64dc29"/>                    <!-- [supposé] Taxe faible -->
-<color id="marketValidSublimationColor" color="#0FE50FFF"/>  <!-- [supposé] Marché : sublimation valide -->
-<color id="warningIconColor" color="#FFE768FF"/>             <!-- [supposé] Icône d'avertissement -->
-<color id="errorColor" color="#CC1919FF"/>                   <!-- [supposé] Erreur -->
-<color id="redInvalidBuildColor" color="#E5190FFF"/>         <!-- [supposé] Build invalide (rouge) -->
-<color id="greyInvalidColor" color="#929594FF"/>             <!-- [supposé] Élément invalide (gris) -->
-<color id="redColor" color="#E50F0FFF"/>                     <!-- [supposé] Rouge générique -->
-<color id="lightRedColor" color="#CE4747FF"/>                <!-- [supposé] Rouge clair générique -->
-<color id="greenColor" color="#0FE50FFF"/>                   <!-- [supposé] Vert générique -->
-<color id="yellowColor" color="#FFE500FF"/>                  <!-- [supposé] Jaune générique -->
-<color id="orangeTransColor" color="#F7890ACC"/>             <!-- [supposé] Orange transparent -->
-<color id="yellowScoreColor" color="#fcd74d"/>               <!-- [supposé] Score (jaune) -->
-<color id="scrollYellowColor" color="#EACC6BFF"/>            <!-- [supposé] Parchemin jaune -->
-<color id="scrollFleshColor" color="#EFDBA8FF"/>             <!-- [supposé] Parchemin couleur chair -->
+<!-- ===== DIVERS — sens conservé, assombries pour le parchemin ===== -->
+<color id="serverOnlineColor" color="#62be25"/>            <!-- [conservée] -->
+<color id="serverUnavailableColor" color="#fc4d55"/>       <!-- [conservée] -->
+<color id="serverDifferentVersion" color="#fc4d55"/>       <!-- [conservée] -->
+<color id="lowTaxColor" color="#2f7d12"/>                  <!-- [vérifié] Taxe de mise en vente (HDV) faible -->
+<color id="mediumTaxColor" color="#b06a00"/>               <!-- [vérifié] Taxe moyenne -->
+<color id="highTaxColor" color="#b8281e"/>                 <!-- [vérifié] Taxe élevée -->
+<color id="marketValidSublimationColor" color="#1f9e1f"/>  <!-- [assombrie] -->
+<color id="warningIconColor" color="#c9a000"/>             <!-- [assombrie] -->
+<color id="errorColor" color="#a81414"/>                   <!-- [assombrie] -->
+<color id="redInvalidBuildColor" color="#b8281e"/>         <!-- [assombrie] -->
+<color id="greyInvalidColor" color="#929594FF"/>           <!-- [conservée] -->
+<color id="redColor" color="#b8281e"/>                     <!-- [assombrie] -->
+<color id="lightRedColor" color="#b84040"/>                <!-- [assombrie] 69 fichiers : surveiller la lisibilité -->
+<color id="greenColor" color="#1f9e1f"/>                   <!-- [assombrie] -->
+<color id="yellowColor" color="#c9a000"/>                  <!-- [assombrie] -->
+<color id="orangeTransColor" color="#c4560fcc"/>           <!-- [assombrie] -->
+<color id="yellowScoreColor" color="#b08a00"/>             <!-- [assombrie] -->
+<color id="scrollYellowColor" color="#b08a30"/>            <!-- [assombrie] -->
+<color id="scrollFleshColor" color="#a08a60"/>             <!-- [assombrie] 14 fichiers : surveiller -->
+<color id="scroolfleshcolor" color="#e83aee"/>             <!-- [inutilisée] Faute de frappe d'origine, absente du code du jeu -->
 
-
+<!-- ===== CANAUX DU CHAT — absents du fichier par défaut, ajoutés (aussi : contour des bulles) ===== -->
+<color id="vicinityChannelColor" color="#d6d6d6"/>          <!-- [vérifié] Général -->
+<color id="privateChannelColor" color="#0066ff"/>           <!-- [vérifié] Privé -->
+<color id="partyChannelColor" color="#53c6ff"/>             <!-- [vérifié] Groupe -->
+<color id="guildChannelColor" color="#a655f8"/>             <!-- [vérifié] Guilde -->
+<color id="tradeChannelColor" color="#e06e10"/>             <!-- [vérifié] Commerce -->
+<color id="frCommunityChannelColor" color="#679bfd"/>       <!-- [vérifié] Communauté FR -->
+<color id="enCommunityChannelColor" color="#936ef8"/>       <!-- [vérifié] Communauté EN -->
+<color id="esCommunityChannelColor" color="#fc7e7e"/>       <!-- [vérifié] Communauté ES -->
+<color id="ptCommunityChannelColor" color="#d0ff78"/>       <!-- [vérifié] Communauté PT -->
+<color id="frRecruitmentChannelColor" color="#bacff8"/>     <!-- [vérifié] Recrutement FR -->
+<color id="enRecruitmentChannelColor" color="#c8b5fc"/>     <!-- [vérifié] Recrutement EN -->
+<color id="esRecruitmentChannelColor" color="#ffc0c0"/>     <!-- [vérifié] Recrutement ES -->
+<color id="ptRecruitmentChannelColor" color="#e9ffbf"/>     <!-- [vérifié] Recrutement PT -->
+<color id="politicChannelColor" color="#ffc400"/>           <!-- [vérifié] Politique / nation -->
+<color id="battlegroundChannelColor" color="#ff3c00"/>      <!-- [vérifié] Zone PvP -->
+<color id="intergameChannelColor" color="#a3005a"/>         <!-- [vérifié] Discussion Ankama -->
+<color id="informationChannelColor" color="#009900"/>       <!-- [vérifié] Informations -->
+<color id="fightInformationChannelColor" color="#009900"/>  <!-- [vérifié] Combat -->
+<color id="errorChannelColor" color="#bd0000"/>             <!-- [vérifié] Erreurs -->
 </colors>
-
-
-

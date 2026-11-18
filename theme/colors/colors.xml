@@ -15,14 +15,14 @@
 <color id="defaultDarkColor" color="#4a2c17"/>                  <!-- [vérifié] Chocolat : texte du gouverneur, en-têtes de colonnes de la guilde, texte des bulles de dialogue -->
 <color id="defaultBlackColor" color="#2e2416"/>                 <!-- [vérifié] Brun foncé : interface du gouverneur, fond d'une barre d'XP -->
 <color id="whiteColor" color="#ffffff"/>                        <!-- [vérifié] Texte au-dessus des havre-sacs, texte du guide, menus -->
-<color id="mecanicBlueColor" color="#ffffff"/>                  <!-- [vérifié] Sélection des héros (gestion du compte), texte de la guilde -->
+<color id="mecanicBlueColor" color="#ffffff"/>               <!-- [vérifié] Sélection des héros (gestion du compte), texte de la guilde -->
 <color id="mecanicDarkBlueColor" color="#3e2a1a"/>              <!-- [vérifié] Nom du métier (page métiers), texte des nations / champ de bataille (sans contour) -->
 <color id="passportTitleColor" color="#5a4630"/>                <!-- [vérifié] Titres de l'interface du passeport -->
 <color id="secondaryLight" color="#c4560f"/>                    <!-- [vérifié] Chiffre et picto d'XP (fiche perso), XP des quêtes -->
 <color id="loadingTextColor" color="#e2dcbb"/>                  <!-- [vérifié] Texte de chargement avant l'entrée sur le serveur -->
-<color id="defaultDisabledColor" color="#c4560f"/>              <!-- [vérifié] Boutons « Appliquer » et « Ajouter un grade » (guilde) -->
+<color id="defaultDisabledColor" color="#a39c97"/>              <!-- [vérifié] Boutons « Appliquer » et « Ajouter un grade » (guilde) -->
 <color id="white50" color="#FFFFFF7F"/>                         <!-- [vérifié] Texte du bouton « Enregistrer » (builds) -->
-<color id="thirdTextColor" color="#FFFFFF7F"/>                  <!-- [vérifié] Valeur « Restants » (aptitudes) -->
+<color id="defaultDisabledColor" color="#8c8368"/>                <!-- [vérifié] Valeur « Restants » (aptitudes) -->
 <color id="textDarkTextEditorColor" color="#E5DDCCCC"/>         <!-- [observé] HUD : niveau à côté du cœur, quantités de la barre de raccourcis -->
 <color id="blackColor" color="#ffffff"/>                        <!-- [à confirmer] Peut-être les libellés du gouverneur -->
 <color id="disabledTextColor" color="#ffffffb2"/>               <!-- [non testée] Texte désactivé (158 fichiers : la plus répandue, à cartographier) -->
@@ -63,7 +63,7 @@
 <color id="scrollSelectedCellColor" color="#c4560f"/>                <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="scrollMouseOverCellColor" color="#bdb594"/>               <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="detailedCellColor" color="#a8a388"/>                      <!-- [non trouvée] Valeur cohérente avec le thème -->
-<color id="listFilterColor" color="#5a4630"/>                        <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="listFilterColor" color="#F4D89EFF"/>                     <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="fleaEvenCellColor" color="#a8a388"/>                      <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="fleaOddCellColor" color="#9b967c"/>                       <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="craftFeeDefinedOddPriceColor" color="#ffffff"/>           <!-- [non trouvée] Prix des frais d'artisanat -->
@@ -211,7 +211,7 @@
 <color id="territoryNameColor" color="#FFFF66FF"/>        <!-- [vérifié] Carte -->
 <color id="gainLaurelLawColor" color="#D1F951FF"/>        <!-- [conservée] Peut-être à adapter plus tard -->
 <color id="lossLaurelLawColor" color="#FC491CFF"/>        <!-- [conservée] Peut-être à adapter plus tard -->
-<color id="guildPointsColor" color="#DD6800FF"/>          <!-- [vérifié] Points de guilde -->
+<color id="guildPointsColor" color="#F0C060"/>        <!-- [vérifié] Points de guilde -->
 
 <!-- ===== DIVERS — sens conservé, assombries pour le parchemin ===== -->
 <color id="serverOnlineColor" color="#62be25"/>            <!-- [conservée] -->

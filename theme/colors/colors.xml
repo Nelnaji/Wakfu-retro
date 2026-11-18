@@ -191,8 +191,8 @@
 <color id="webShopBackgroundColor" color="#ffffff"/>                      <!-- [vérifié] Sigle € -->
 <color id="webShopHighlightColor" color="#514a3ce1"/>                     <!-- [proposition] Panneau de la bannière (à vérifier) -->
 <color id="webShopMoneyPriceSaleColor" color="#ffffff"/>                  <!-- [proposition] Texte des prix en € (à vérifier) -->
-<color id="webShopMoneyPriceBackgroundColor" color="#e0701a"/>            <!-- [proposition] Fond des prix en € (à vérifier) -->
-<color id="webShopPriceBackgroundColor" color="#c4560f"/>                 <!-- [proposition] Étiquettes de nom des packs ? (à vérifier) -->
+<color id="webShopMoneyPriceBackgroundColor" color="#514a3c"/>         <!-- [proposition] Fond des prix en € (à vérifier) -->
+<color id="webShopPriceBackgroundColor" color="#514a3c1a"/>              <!-- [proposition] Étiquettes de nom des packs ? (à vérifier) -->
 <color id="webShopMoneyPriceColor" color="#e0701aab"/>                    <!-- [proposition] À identifier -->
 <color id="webShopOgrineAmountColor" color="#2fb1be"/>                    <!-- [vérifié] Solde d'Ogrines : d'origine -->
 <color id="webShopNotEnoughOgrinePriceColor" color="#ff7a6a"/>            <!-- [vérifié] Prix en Ogrines si solde insuffisant -->

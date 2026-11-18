@@ -13,7 +13,7 @@
 <color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Infobulles d'aide, titre de l'infobulle des aptitudes, PV dans le cœur -->
 <color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Petites étiquettes claires : rareté (« Légendaire »), « Actif » -->
 <color id="defaultDarkColor" color="#4a2c17"/>                  <!-- [vérifié] Chocolat : texte du gouverneur, en-têtes de colonnes de la guilde, texte des bulles de dialogue -->
-<color id="defaultBlackColor" color="#2e2416"/>                 <!-- [vérifié] Brun foncé : interface du gouverneur, fond d'une barre d'XP -->
+<color id="defaultBlackColor" color="#6d634d"/>            <!-- [vérifié] Brun foncé : interface du gouverneur, fond d'une barre d'XP -->
 <color id="whiteColor" color="#ffffff"/>                        <!-- [vérifié] Texte au-dessus des havre-sacs, texte du guide, menus -->
 <color id="mecanicBlueColor" color="#ffffff"/>               <!-- [vérifié] Sélection des héros (gestion du compte), texte de la guilde -->
 <color id="mecanicDarkBlueColor" color="#3e2a1a"/>              <!-- [vérifié] Nom du métier (page métiers), texte des nations / champ de bataille (sans contour) -->

@@ -63,7 +63,7 @@
 <color id="scrollSelectedCellColor" color="#c4560f"/>                <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="scrollMouseOverCellColor" color="#bdb594"/>               <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="detailedCellColor" color="#a8a388"/>                      <!-- [non trouvée] Valeur cohérente avec le thème -->
-<color id="listFilterColor" color="#5a4630"/>                        <!-- [non trouvée] Valeur cohérente avec le thème -->
+<color id="listFilterColor" color="#f2ead0"/>                     <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="fleaEvenCellColor" color="#a8a388"/>                      <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="fleaOddCellColor" color="#9b967c"/>                       <!-- [non trouvée] Valeur cohérente avec le thème -->
 <color id="craftFeeDefinedOddPriceColor" color="#ffffff"/>           <!-- [non trouvée] Prix des frais d'artisanat -->

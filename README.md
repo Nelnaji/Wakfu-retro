@@ -41,7 +41,11 @@ comme le permet le système de thèmes officiel d'Ankama.
 | 🎯 **Sélection** | Contours orange façon Retro |
 | 🔘 **Boutons principaux** | Orange Retro |
 | 📊 **Jauges Wakfu / Stasis / XP** | Couleurs d'origine conservées |
-| 🪟 **Fenêtres, onglets, champs, infobulles** | 🚧 En cours : passage progressif en thème clair, écran par écran |
+| 🪟 **Fenêtres récentes** (inventaire, fiche, aptitudes…) | Parchemin beige clair, en-têtes brun foncé |
+| 🏛️ **Anciennes interfaces** (guilde, métiers, boutique, politique…) | Fond beige clair, zones intérieures beige plus sombre, socles orange au survol et à la sélection |
+| 💭 **Dialogues avec les PNJ** | Panneau noir chaud, réponses brunes (orange au survol), bandeau du nom orange brûlé |
+| ℹ️ **Infobulles** | Fond brun foncé, texte blanc |
+| 🖼️ **Qualité des images** | Toutes les images sont lisses : dessin d'origine conservé, seules les couleurs changent |
 
 ---
 
@@ -86,25 +90,26 @@ en plus pâle pour le Recrutement. On reconnaît ainsi la langue d'un message d'
 
 ## 🛠️ Comment le thème est fabriqué
 
-### Les images : un outil de recoloration
+### Les images : recolorées sans perte de qualité
 
 L'interface de Wakfu compte plus de 600 images. Elles ne sont pas redessinées à la main :
-elles sont **recolorées automatiquement** par un script Python
-([`outils/recolorer_theme.py`](outils/recolorer_theme.py)), à partir du modèle de thème officiel d'Ankama.
+elles sont **recolorées par des scripts Python** (dossier [`outils/`](outils/)).
 
 Le principe :
-- chaque pixel est classé selon sa teinte, sa saturation et sa luminosité (gris, bleu nuit, turquoise, rose…) ;
-- chaque catégorie suit une **palette** : un dégradé qui associe une luminosité d'origine à une nouvelle couleur ;
-- comme la correspondance se fait par luminosité, **les reliefs, ombres et textures de Wakfu sont conservés**, seule la teinte change ;
+- **le dessin vient toujours d'une image lisse** : les originaux du jeu, ou le thème EvaUnit-01
+  pour les grandes planches des anciennes interfaces ;
+- **seules les couleurs changent** : relief, ombres, dégradés, grain et bords doux sont conservés ;
 - **la taille et la transparence ne sont jamais modifiées**, et les images sont enregistrées en PNG, sans perte ;
-- les grands aplats (fonds de fenêtres) sont distingués des petits détails (icônes, traits), pour que chacun reçoive la bonne couleur ;
-- certaines images restent d'origine : Dofus, raretés, jauges, couleurs alliés/ennemis, illustrations.
+- certaines images restent d'origine : Dofus, raretés, jauges, couleurs alliés/ennemis, illustrations, pictos.
 
-Toutes les couleurs et les règles se règlent en haut du script, dans la partie **RÉGLAGES**.
+Chaque retouche est d'abord **diagnostiquée en jeu** : l'image est remplie d'une couleur vive
+(ou découpée en cases de couleurs uniques) pour savoir exactement quel écran elle dessine.
+Le détail est dans [`docs/INTERFACES.md`](docs/INTERFACES.md).
 
 ```bash
 pip install pillow numpy scipy
-python outils/recolorer_theme.py  chemin/vers/theme_officiel/images  sortie/images
+# dessin de l'image lisse + couleurs de l'image recolorée, même taille
+python outils/transfert_qualite.py  image_lisse.png  image_recoloree.png  sortie.png
 ```
 
 ### Les couleurs de texte : `colors.xml`
@@ -169,17 +174,24 @@ Le thème avance **écran par écran**, une étape testée en jeu à la fois.
 - [x] HUD : panneaux beige clair, boutons orange à pictos blancs
 - [x] Groupe et timeline de combat : survol orange
 - [x] Boutons : passage progressif en orange
+- [x] Écran de connexion : panneau des personnages beige
+- [x] Dialogues avec les PNJ
+- [x] Qualité : toutes les images refaites à partir de sources lisses
+- [x] Anciennes interfaces : fond des fenêtres, fonds intérieurs, socles des menus
+- [ ] Anciennes interfaces : boutons, cases de la boutique, bandeaux, infobulles jaunes
+- [ ] Guide
+- [ ] Passeport
+- [ ] Entrée des donjons
 - [ ] Champs de saisie et valeurs des aptitudes
 - [ ] Suivi de quête
-- [ ] Infobulles d'objets
-- [ ] Autres fenêtres (inventaire, options, hôtel de vente…)
 
 ---
 
 ## 🙏 Crédits
 
 - **[Ankama](https://www.ankama.com)** : WAKFU, Dofus Retro, et le **modèle de thème officiel** qui sert de base au projet. Toutes les images d'origine leur appartiennent.
-- **Nightflow**, par **Ymoka et l'équipe WAKFU** : le `colors.xml` de ce thème a servi de point de départ au projet.
+- **Nightflow**, par **Ymoka et l'équipe WAKFU** : le `colors.xml` de ce thème a servi de point de départ au projet, et son design des anciennes interfaces est conservé.
+- **EvaUnit-01**, par **Dranathilus et l'équipe WAKFU** : ses planches lisses servent de base au dessin des anciennes interfaces.
 - **Ailten et KockaColHa** : leur thème Dofus Retro pour Wakfu (2022) a servi de référence et d'inspiration.
 - **Naofel** : création, tests en jeu, direction artistique et couleurs du chat.
 
@@ -189,7 +201,7 @@ Le thème avance **écran par écran**, une étape testée en jeu à la fois.
 
 **Oui**, l'IA a été utilisée pour ce projet, pour :
 - générer divers scripts, dont l'outil de recoloration ;
-- modifier les images de l'interface (recoloration).
+- modifier les images de l'interface (recoloration, diagnostics en jeu, reprise de la qualité).
 
 La direction artistique, les choix de couleurs et les tests en jeu sont faits à la main.
 

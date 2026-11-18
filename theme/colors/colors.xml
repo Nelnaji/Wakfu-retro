@@ -26,7 +26,7 @@
 <color id="textDarkTextEditorColor" color="#E5DDCCCC"/>         <!-- [observé] HUD : niveau à côté du cœur, quantités de la barre de raccourcis -->
 <color id="blackColor" color="#ffffff"/>                        <!-- [à confirmer] Peut-être les libellés du gouverneur -->
 <color id="disabledTextColor" color="#ffffffb2"/>               <!-- [non testée] Texte désactivé (158 fichiers : la plus répandue, à cartographier) -->
-<color id="mecanicLightBlueColor" color="#AAD6D3FF"/>           <!-- [non trouvée] — -->
+<color id="mecanicLightBlueColor" color="#f2ead0"/>   <!-- températures des prévisions (climat) -->
 <color id="neutralStateColor" color="#ffffff"/>                 <!-- [non trouvée] — -->
 <color id="positiveStateColor" color="#46a324"/>                <!-- [non trouvée] — -->
 <color id="negativeStateColor" color="#d6454a"/>                <!-- [non trouvée] — -->
@@ -104,7 +104,7 @@
 <!-- ===== CARACTÉRISTIQUES, ÉLÉMENTS ET JETS — gameplay : codes historiques conservés ===== -->
 <color id="characStandardColor" color="#2f7d12"/>                <!-- [vérifié] Valeurs positives de la fiche -->
 <color id="characNegativeColor" color="#b8281e"/>                <!-- [vérifié] Valeurs négatives de la fiche -->
-<color id="legacyCharacStandardColor" color="#f0ffea"/>          <!-- [non trouvée] Sans doute les anciennes interfaces -->
+<color id="legacyCharacStandardColor" color="#f0ffea"/>          <!-- [trouvée] ce sont les stats des compagnons dans la fenetre heros et compagnons  -->
 <color id="defaultLightGoldColor" color="#F2A33F"/>              <!-- [vérifié] Jets améliorés dans les infobulles -->
 <color id="defaultIntenseGoldColor" color="#FFC626"/>            <!-- [non testée] — -->
 <color id="fireColor" color="#c4570f"/>                          <!-- [observé] Feu -->
@@ -231,7 +231,7 @@
 <color id="yellowColor" color="#c9a000"/>                  <!-- [assombrie] -->
 <color id="orangeTransColor" color="#c4560fcc"/>           <!-- [assombrie] -->
 <color id="yellowScoreColor" color="#b08a00"/>             <!-- [assombrie] -->
-<color id="scrollYellowColor" color="#b08a30"/>            <!-- [assombrie] -->
+<color id="scrollYellowColor" color="#f0c060"/>   <!-- texte doré du budget (gestion de zone) -->
 <color id="scrollFleshColor" color="#a08a60"/>             <!-- [assombrie] 14 fichiers : surveiller -->
 <color id="scroolfleshcolor" color="#e83aee"/>             <!-- [inutilisée] Faute de frappe d'origine, absente du code du jeu -->
 

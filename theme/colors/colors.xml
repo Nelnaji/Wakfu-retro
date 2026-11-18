@@ -191,11 +191,11 @@
 <color id="webShopBackgroundColor" color="#ffffff"/>                      <!-- [vérifié] Sigle € -->
 <color id="webShopHighlightColor" color="#514a3ce1"/>                     <!-- [proposition] Panneau de la bannière (à vérifier) -->
 <color id="webShopMoneyPriceSaleColor" color="#ffffff"/>                  <!-- [proposition] Texte des prix en € (à vérifier) -->
-<color id="webShopMoneyPriceBackgroundColor" color="#e0701a"/>            <!-- [proposition] Fond des prix en € (à vérifier) -->
-<color id="webShopPriceBackgroundColor" color="#c4560f"/>                 <!-- [proposition] Étiquettes de nom des packs ? (à vérifier) -->
+<color id="webShopMoneyPriceBackgroundColor" color="#514a3c"/>         <!-- [proposition] Fond des prix en € (à vérifier) -->
+<color id="webShopPriceBackgroundColor" color="#514a3c1a"/>              <!-- [proposition] Étiquettes de nom des packs ? (à vérifier) -->
 <color id="webShopMoneyPriceColor" color="#e0701aab"/>                    <!-- [proposition] À identifier -->
 <color id="webShopOgrineAmountColor" color="#2fb1be"/>                    <!-- [vérifié] Solde d'Ogrines : d'origine -->
-<color id="webShopNotEnoughOgrinePriceColor" color="#ff7a6a"/>            <!-- [vérifié] Prix en Ogrines si solde insuffisant -->
+<color id="webShopNotEnoughOgrinePriceColor" color="#7F7F7F"/>            <!-- [vérifié] Prix en Ogrines si solde insuffisant -->
 <color id="webShopNotEnoughOgrinePriceBackgroundColor" color="#514a3c"/>  <!-- [vérifié] Fond de ce prix -->
 <color id="webShopOgrinePriceColor" color="#2fb1be"/>                     <!-- [non trouvée] Prix si solde suffisant ? -->
 <color id="webShopOgrinePriceSaleColor" color="#2fb1be"/>                 <!-- [non trouvée] — -->

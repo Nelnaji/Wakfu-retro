@@ -20,9 +20,9 @@
 <color id="passportTitleColor" color="#5a4630"/>                <!-- [vérifié] Titres de l'interface du passeport -->
 <color id="secondaryLight" color="#c4560f"/>                    <!-- [vérifié] Chiffre et picto d'XP (fiche perso), XP des quêtes -->
 <color id="loadingTextColor" color="#e2dcbb"/>                  <!-- [vérifié] Texte de chargement avant l'entrée sur le serveur -->
-<color id="defaultDisabledColor" color="#c4560f"/>              <!-- [vérifié] Boutons « Appliquer » et « Ajouter un grade » (guilde) -->
+<color id="defaultDisabledColor" color="#a39c97"/>              <!-- [vérifié] Boutons « Appliquer » et « Ajouter un grade » (guilde) -->
 <color id="white50" color="#FFFFFF7F"/>                         <!-- [vérifié] Texte du bouton « Enregistrer » (builds) -->
-<color id="thirdTextColor" color="#FFFFFF7F"/>                  <!-- [vérifié] Valeur « Restants » (aptitudes) -->
+<color id="defaultDisabledColor" color="#8c8368"/>                <!-- [vérifié] Valeur « Restants » (aptitudes) -->
 <color id="textDarkTextEditorColor" color="#E5DDCCCC"/>         <!-- [observé] HUD : niveau à côté du cœur, quantités de la barre de raccourcis -->
 <color id="blackColor" color="#ffffff"/>                        <!-- [à confirmer] Peut-être les libellés du gouverneur -->
 <color id="disabledTextColor" color="#ffffffb2"/>               <!-- [non testée] Texte désactivé (158 fichiers : la plus répandue, à cartographier) -->

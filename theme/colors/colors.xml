@@ -211,7 +211,7 @@
 <color id="territoryNameColor" color="#FFFF66FF"/>        <!-- [vérifié] Carte -->
 <color id="gainLaurelLawColor" color="#D1F951FF"/>        <!-- [conservée] Peut-être à adapter plus tard -->
 <color id="lossLaurelLawColor" color="#FC491CFF"/>        <!-- [conservée] Peut-être à adapter plus tard -->
-<color id="guildPointsColor" color="#DD6800FF"/>          <!-- [vérifié] Points de guilde -->
+<color id="guildPointsColor" color="#F0C060"/>        <!-- [vérifié] Points de guilde -->
 
 <!-- ===== DIVERS — sens conservé, assombries pour le parchemin ===== -->
 <color id="serverOnlineColor" color="#62be25"/>            <!-- [conservée] -->

@@ -88,12 +88,12 @@
 <color id="black75" color="#181612bf"/>                              <!-- [non testée] Voile noir 75 % -->
 
 <!-- ===== HÉROS ET COMPAGNONS — tons chauds ===== -->
-<color id="heroGradientFirstColor" color="#e0701a"/>        <!-- [vérifié] Dégradé des vignettes de héros (haut) -->
-<color id="heroGradientSecondColor" color="#7a3a10"/>       <!-- [vérifié] Dégradé des vignettes de héros (bas) -->
-<color id="companionGradientFirstColor" color="#e0b84a"/>   <!-- [vérifié] Dégradé des vignettes de compagnons (haut) -->
-<color id="companionGradientSecondColor" color="#7a5a20"/>  <!-- [vérifié] Dégradé des vignettes de compagnons (bas) -->
-<color id="enabledHeroSlotColor" color="#e0701a80"/>        <!-- [vérifié] Emplacement où un héros / compagnon peut être ajouté -->
-<color id="disabledHeroSlotColor" color="#9c8a7a80"/>       <!-- [vérifié] Emplacement bloqué (pas en mode booster) -->
+<color id="heroGradientFirstColor" color="#6d634d"/>        <!-- [vérifié] Dégradé des vignettes de héros (haut) -->
+<color id="heroGradientSecondColor" color="#4f493b"/>       <!-- [vérifié] Dégradé des vignettes de héros (bas) -->
+<color id="companionGradientFirstColor" color="#6d634d"/>   <!-- [vérifié] Dégradé des vignettes de compagnons (haut) -->
+<color id="companionGradientSecondColor" color="#4f493b"/>  <!-- [vérifié] Dégradé des vignettes de compagnons (bas) -->
+<color id="enabledHeroSlotColor" color="#e7d2a680"/>        <!-- [vérifié] Emplacement où un héros / compagnon peut être ajouté -->
+<color id="disabledHeroSlotColor" color="#ffffff00"/>       <!-- [vérifié] Emplacement bloqué (pas en mode booster) -->
 
 <!-- ===== INFOBULLES ET SURVOL ===== -->
 <color id="tooltipBackgroundColor" color="#181612f2"/>    <!-- [non trouvée] Le fond des infobulles vient des images TooltipBG-* -->
@@ -104,7 +104,7 @@
 <!-- ===== CARACTÉRISTIQUES, ÉLÉMENTS ET JETS — gameplay : codes historiques conservés ===== -->
 <color id="characStandardColor" color="#2f7d12"/>                <!-- [vérifié] Valeurs positives de la fiche -->
 <color id="characNegativeColor" color="#b8281e"/>                <!-- [vérifié] Valeurs négatives de la fiche -->
-<color id="legacyCharacStandardColor" color="#2f7d12"/>          <!-- [non trouvée] Sans doute les anciennes interfaces -->
+<color id="legacyCharacStandardColor" color="#f0ffea"/>          <!-- [non trouvée] Sans doute les anciennes interfaces -->
 <color id="defaultLightGoldColor" color="#F2A33F"/>              <!-- [vérifié] Jets améliorés dans les infobulles -->
 <color id="defaultIntenseGoldColor" color="#FFC626"/>            <!-- [non testée] — -->
 <color id="fireColor" color="#c4570f"/>                          <!-- [observé] Feu -->

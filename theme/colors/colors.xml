@@ -26,7 +26,7 @@
 <color id="textDarkTextEditorColor" color="#E5DDCCCC"/>         <!-- [observé] HUD : niveau à côté du cœur, quantités de la barre de raccourcis -->
 <color id="blackColor" color="#ffffff"/>                        <!-- [à confirmer] Peut-être les libellés du gouverneur -->
 <color id="disabledTextColor" color="#ffffffb2"/>               <!-- [non testée] Texte désactivé (158 fichiers : la plus répandue, à cartographier) -->
-<color id="mecanicLightBlueColor" color="#AAD6D3FF"/>           <!-- [non trouvée] — -->
+<color id="mecanicLightBlueColor" color="#f2ead0"/>        <!-- [non trouvée] — -->
 <color id="neutralStateColor" color="#ffffff"/>                 <!-- [non trouvée] — -->
 <color id="positiveStateColor" color="#46a324"/>                <!-- [non trouvée] — -->
 <color id="negativeStateColor" color="#d6454a"/>                <!-- [non trouvée] — -->
@@ -104,7 +104,7 @@
 <!-- ===== CARACTÉRISTIQUES, ÉLÉMENTS ET JETS — gameplay : codes historiques conservés ===== -->
 <color id="characStandardColor" color="#2f7d12"/>                <!-- [vérifié] Valeurs positives de la fiche -->
 <color id="characNegativeColor" color="#b8281e"/>                <!-- [vérifié] Valeurs négatives de la fiche -->
-<color id="legacyCharacStandardColor" color="#f0ffea"/>          <!-- [non trouvée] Sans doute les anciennes interfaces -->
+<color id="legacyCharacStandardColor" color="#f0ffea"/>          <!-- [trouvée] ce sont les stats des compagnons dans la fenetre heros et compagnons  -->
 <color id="defaultLightGoldColor" color="#F2A33F"/>              <!-- [vérifié] Jets améliorés dans les infobulles -->
 <color id="defaultIntenseGoldColor" color="#FFC626"/>            <!-- [non testée] — -->
 <color id="fireColor" color="#c4570f"/>                          <!-- [observé] Feu -->

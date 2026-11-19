@@ -176,15 +176,15 @@
 <color id="battlegroundAttackTeamScoreColor" color="#FF0000FF"/>       <!-- [conservée] -->
 <color id="battlegroundDefenseTeamScoreColor" color="#00FFFFFF"/>      <!-- [conservée] -->
 
-<!-- ===== RARETÉS — d'origine (chantier futur : à ajuster avec itemsRarityBorders/) ===== -->
-<color id="oldRarityColor" color="#4f4b44"/>
-<color id="commonRarityColor" color="#ffffff"/>
-<color id="rareRarityColor" color="#16642e"/>
-<color id="mythicRarityColor" color="#a34408"/>
-<color id="legendaryRarityColor" color="#4a6400"/>
-<color id="relicRarityColor" color="#5c2aa6"/>
-<color id="souvenirRarityColor" color="#17587f"/>
-<color id="epicRarityColor" color="#981f68"/>
+<!-- ===== RARETÉS — texte assorti aux cadres (itemsRarityBorders, pictos, Tooltip-Borders) ===== -->
+<color id="oldRarityColor" color="#4f4b44"/>        <!-- Ancien : gris-brun -->
+<color id="commonRarityColor" color="#ffffff"/>     <!-- Commun : blanc (inchangé) -->
+<color id="rareRarityColor" color="#16642e"/>       <!-- Rare : vert forêt -->
+<color id="mythicRarityColor" color="#a34408"/>     <!-- Mythique : orange brûlé -->
+<color id="legendaryRarityColor" color="#7a6200"/>  <!-- Légendaire : or ancien -->
+<color id="relicRarityColor" color="#5c2aa6"/>      <!-- Relique : violet profond -->
+<color id="souvenirRarityColor" color="#17587f"/>   <!-- Souvenir : bleu acier -->
+<color id="epicRarityColor" color="#981f68"/>       <!-- Épique : framboise -->
 
 <!-- ===== BOUTIQUE ===== -->
 <color id="webShopBackgroundColor" color="#ffffff"/>                      <!-- [vérifié] Sigle € -->

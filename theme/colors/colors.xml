@@ -240,19 +240,19 @@
 
 <!-- ===== CANAUX DU CHAT — absents du fichier par défaut, ajoutés (aussi : contour des bulles) ===== -->
 <color id="vicinityChannelColor" color="#d6d6d6"/>          <!-- [vérifié] Général -->
-<color id="privateChannelColor" color="#0066ff"/>           <!-- [vérifié] Privé -->
+<color id="privateChannelColor" color="#3a88fc"/>           <!-- [vérifié] Privé -->
 <color id="partyChannelColor" color="#53c6ff"/>             <!-- [vérifié] Groupe -->
-<color id="guildChannelColor" color="#a655f8"/>             <!-- [vérifié] Guilde -->
-<color id="tradeChannelColor" color="#e06e10"/>             <!-- [vérifié] Commerce -->
-<color id="frCommunityChannelColor" color="#679bfd"/>       <!-- [vérifié] Communauté FR -->
+<color id="guildChannelColor" color="#c082ff"/>             <!-- [vérifié] Guilde -->
+<color id="tradeChannelColor" color="#ff9650"/>             <!-- [vérifié] Commerce -->
+<color id="frCommunityChannelColor" color="#82aeff"/>       <!-- [vérifié] Communauté FR -->
 <color id="enCommunityChannelColor" color="#936ef8"/>       <!-- [vérifié] Communauté EN -->
 <color id="esCommunityChannelColor" color="#fc7e7e"/>       <!-- [vérifié] Communauté ES -->
 <color id="ptCommunityChannelColor" color="#d0ff78"/>       <!-- [vérifié] Communauté PT -->
-<color id="frRecruitmentChannelColor" color="#bacff8"/>     <!-- [vérifié] Recrutement FR -->
+<color id="frRecruitmentChannelColor" color="#aab1be"/>     <!-- [vérifié] Recrutement FR -->
 <color id="enRecruitmentChannelColor" color="#c8b5fc"/>     <!-- [vérifié] Recrutement EN -->
 <color id="esRecruitmentChannelColor" color="#ffc0c0"/>     <!-- [vérifié] Recrutement ES -->
 <color id="ptRecruitmentChannelColor" color="#e9ffbf"/>     <!-- [vérifié] Recrutement PT -->
-<color id="politicChannelColor" color="#ffc400"/>           <!-- [vérifié] Politique / nation -->
+<color id="politicChannelColor" color="#fcd450"/>           <!-- [vérifié] Politique / nation -->
 <color id="battlegroundChannelColor" color="#ff3c00"/>      <!-- [vérifié] Zone PvP -->
 <color id="intergameChannelColor" color="#a3005a"/>         <!-- [vérifié] Discussion Ankama -->
 <color id="informationChannelColor" color="#009900"/>       <!-- [vérifié] Informations -->

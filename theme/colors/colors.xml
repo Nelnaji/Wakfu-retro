@@ -9,6 +9,9 @@
 <!-- ===== TEXTES — règle : texte avec contour = clair, texte sans contour = foncé ===== -->
 <color id="mainTextLightColor" color="#ffffff"/>                <!-- [vérifié] Texte principal : fenêtres, titres d'en-tête, infobulles d'objets, quantités -->
 <color id="secondTextLightColor" color="#ffffff"/>              <!-- [vérifié] Titres de section, texte secondaire, en-têtes de colonnes (classement donjons), « Niv. » — texte à contour -->
+
+<color id="thirdTextColor" color="#FFFFFF7F"/>   
+
 <color id="mainTextTitleColor" color="#f2ead0"/>                <!-- [vérifié] Champ de saisie du chat, cases cochées, onglets inactifs, champs de saisie, kamas -->
 <color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Infobulles d'aide, titre de l'infobulle des aptitudes, PV dans le cœur -->
 <color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Petites étiquettes claires : rareté (« Légendaire »), « Actif » -->
@@ -29,7 +32,7 @@
 <color id="mecanicLightBlueColor" color="#f2ead0"/>   <!-- températures des prévisions (climat) -->
 <color id="neutralStateColor" color="#ffffff"/>                 <!-- [non trouvée] — -->
 <color id="positiveStateColor" color="#46a324"/>                <!-- [non trouvée] — -->
-<color id="negativeStateColor" color="#45d1d6"/>                <!-- [non trouvée] — -->
+<color id="negativeStateColor" color="#d6454a"/>                <!-- [non trouvée] — -->
 <color id="achievementCategoryCompleteColor" color="#ffffff"/>  <!-- [non trouvée] — -->
 <color id="importantTextColor" color="#e7d2a6"/>                <!-- [non trouvée] — -->
 <color id="descriptionPopupColor" color="#ffe186"/>             <!-- [non trouvée] — -->
@@ -42,8 +45,8 @@
 <color id="greyColor" color="#ffffff"/>                         <!-- [inutilisée] Absente du code du jeu -->
 
 <!-- ===== LISTES ET TABLEAUX — teintes de la fiche perso pour toutes les listes (provisoire, contraste à tester) ===== -->
-<color id="marketTableEvenCellColor" color="#ffffff0d"/>             <!-- [vérifié] Toutes les listes internes des interfaces récentes (fiche, aptitudes, infobulles, HDV) : voile clair -->
-<color id="marketTableOddCellColor" color="#0000000d"/>              <!-- [vérifié] Idem : voile sombre -->
+<color id="marketTableEvenCellColor" color="#3e36281f"/>           <!-- [vérifié] Toutes les listes internes des interfaces récentes (fiche, aptitudes, infobulles, HDV) : voile clair -->
+<color id="marketTableOddCellColor"  color="#ffffff1f"/>             <!-- [vérifié] Idem : voile sombre -->
 <color id="evenCellColor" color="#a8a388"/>                          <!-- [vérifié] Lignes paires : guilde, champ de bataille, métiers -->
 <color id="oddCellColor" color="#9b967c"/>                           <!-- [vérifié] Lignes impaires : guilde, champ de bataille, métiers -->
 <color id="selectedCellColor" color="#c4560f"/>                      <!-- [vérifié] Ligne sélectionnée (mêmes listes) -->
@@ -176,15 +179,16 @@
 <color id="battlegroundAttackTeamScoreColor" color="#FF0000FF"/>       <!-- [conservée] -->
 <color id="battlegroundDefenseTeamScoreColor" color="#00FFFFFF"/>      <!-- [conservée] -->
 
-<!-- ===== RARETÉS — texte assorti aux cadres (itemsRarityBorders, pictos, Tooltip-Borders) ===== -->
-<color id="oldRarityColor" color="#4f4b44"/>        <!-- Ancien : gris-brun -->
-<color id="commonRarityColor" color="#ffffff"/>     <!-- Commun : blanc (inchangé) -->
-<color id="rareRarityColor" color="#16642e"/>       <!-- Rare : vert forêt -->
-<color id="mythicRarityColor" color="#a34408"/>     <!-- Mythique : orange brûlé -->
-<color id="legendaryRarityColor" color="#7a6200"/>  <!-- Légendaire : or ancien -->
-<color id="relicRarityColor" color="#5c2aa6"/>      <!-- Relique : violet profond -->
-<color id="souvenirRarityColor" color="#17587f"/>   <!-- Souvenir : bleu acier -->
-<color id="epicRarityColor" color="#981f68"/>       <!-- Épique : framboise -->
+<!-- ===== RARETÉS — d'origine (chantier futur : à ajuster avec itemsRarityBorders/) ===== -->
+<color id="oldRarityColor" color="#A5AAA0"/>        <!-- [vérifié] -->
+<color id="commonRarityColor" color="#FFFFFF"/>     <!-- [vérifié] -->
+<color id="rareRarityColor" color="#56ffab"/>       <!-- [vérifié] -->
+<color id="mythicRarityColor" color="#FFA040"/>     <!-- [vérifié] -->
+<color id="legendaryRarityColor" color="#D8EA00"/>  <!-- [vérifié] -->
+<color id="relicRarityColor" color="#A35EFF"/>      <!-- [vérifié] -->
+<color id="souvenirRarityColor" color="#16AAFF"/>   <!-- [vérifié] -->
+<color id="epicRarityColor" color="#FF5EBC"/>       <!-- [vérifié] -->
+<color id="adminRarityColor" color="#D83F3FFF"/>    <!-- [vérifié] -->
 
 <!-- ===== BOUTIQUE ===== -->
 <color id="webShopBackgroundColor" color="#ffffff"/>                      <!-- [vérifié] Sigle € -->
@@ -236,22 +240,22 @@
 
 <!-- ===== CANAUX DU CHAT — absents du fichier par défaut, ajoutés (aussi : contour des bulles) ===== -->
 <color id="vicinityChannelColor" color="#d6d6d6"/>          <!-- [vérifié] Général -->
-<color id="privateChannelColor" color="#0066ff"/>           <!-- [vérifié] Privé -->
+<color id="privateChannelColor" color="#3a88fc"/>           <!-- [vérifié] Privé -->
 <color id="partyChannelColor" color="#53c6ff"/>             <!-- [vérifié] Groupe -->
-<color id="guildChannelColor" color="#a655f8"/>             <!-- [vérifié] Guilde -->
-<color id="tradeChannelColor" color="#e06e10"/>             <!-- [vérifié] Commerce -->
-<color id="frCommunityChannelColor" color="#679bfd"/>       <!-- [vérifié] Communauté FR -->
+<color id="guildChannelColor" color="#c082ff"/>             <!-- [vérifié] Guilde -->
+<color id="tradeChannelColor" color="#ff9650"/>             <!-- [vérifié] Commerce -->
+<color id="frCommunityChannelColor" color="#82aeff"/>       <!-- [vérifié] Communauté FR -->
 <color id="enCommunityChannelColor" color="#936ef8"/>       <!-- [vérifié] Communauté EN -->
 <color id="esCommunityChannelColor" color="#fc7e7e"/>       <!-- [vérifié] Communauté ES -->
 <color id="ptCommunityChannelColor" color="#d0ff78"/>       <!-- [vérifié] Communauté PT -->
-<color id="frRecruitmentChannelColor" color="#bacff8"/>     <!-- [vérifié] Recrutement FR -->
+<color id="frRecruitmentChannelColor" color="#aab1be"/>     <!-- [vérifié] Recrutement FR -->
 <color id="enRecruitmentChannelColor" color="#c8b5fc"/>     <!-- [vérifié] Recrutement EN -->
 <color id="esRecruitmentChannelColor" color="#ffc0c0"/>     <!-- [vérifié] Recrutement ES -->
 <color id="ptRecruitmentChannelColor" color="#e9ffbf"/>     <!-- [vérifié] Recrutement PT -->
-<color id="politicChannelColor" color="#ffc400"/>           <!-- [vérifié] Politique / nation -->
+<color id="politicChannelColor" color="#fcd450"/>           <!-- [vérifié] Politique / nation -->
 <color id="battlegroundChannelColor" color="#ff3c00"/>      <!-- [vérifié] Zone PvP -->
 <color id="intergameChannelColor" color="#a3005a"/>         <!-- [vérifié] Discussion Ankama -->
-<color id="informationChannelColor" color="#009900"/>       <!-- [vérifié] Informations -->
-<color id="fightInformationChannelColor" color="#009900"/>  <!-- [vérifié] Combat -->
+<color id="informationChannelColor" color="#46cf46"/>       <!-- [vérifié] Informations -->
+<color id="fightInformationChannelColor" color="#46cf46"/>  <!-- [vérifié] Combat -->
 <color id="errorChannelColor" color="#bd0000"/>             <!-- [vérifié] Erreurs -->
 </colors>

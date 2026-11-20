@@ -183,7 +183,7 @@
 <color id="oldRarityColor" color="#A5AAA0"/>        <!-- [vérifié] -->
 <color id="commonRarityColor" color="#FFFFFF"/>     <!-- [vérifié] -->
 <color id="rareRarityColor" color="#56ffab"/>       <!-- [vérifié] -->
-<color id="mythicRarityColor" color="#E27A00"/>     <!-- [vérifié] -->
+<color id="mythicRarityColor" color="#FFA040"/>     <!-- [vérifié] -->
 <color id="legendaryRarityColor" color="#D8EA00"/>  <!-- [vérifié] -->
 <color id="relicRarityColor" color="#A35EFF"/>      <!-- [vérifié] -->
 <color id="souvenirRarityColor" color="#16AAFF"/>   <!-- [vérifié] -->
@@ -255,7 +255,7 @@
 <color id="politicChannelColor" color="#fcd450"/>           <!-- [vérifié] Politique / nation -->
 <color id="battlegroundChannelColor" color="#ff3c00"/>      <!-- [vérifié] Zone PvP -->
 <color id="intergameChannelColor" color="#a3005a"/>         <!-- [vérifié] Discussion Ankama -->
-<color id="informationChannelColor" color="#009900"/>       <!-- [vérifié] Informations -->
-<color id="fightInformationChannelColor" color="#009900"/>  <!-- [vérifié] Combat -->
+<color id="informationChannelColor" color="#46cf46"/>       <!-- [vérifié] Informations -->
+<color id="fightInformationChannelColor" color="#46cf46"/>  <!-- [vérifié] Combat -->
 <color id="errorChannelColor" color="#bd0000"/>             <!-- [vérifié] Erreurs -->
 </colors>

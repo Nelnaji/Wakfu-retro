@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<name>[Retro]</name>
-	<author>Naofel, basé sur le thème officiel WAKFU</author>
-	<author-fr>Naofel, basé sur le thème officiel WAKFU</author-fr>
-	<version>4.0</version>
-	<wakfu>1.90</wakfu>
-	<description>Fusion Dofus Retro et Wakfu, tons bruns chauds</description>
-	<description-fr>Fusion Dofus Retro et Wakfu, tons bruns chauds</description-fr>
+	<author>Naofel, based on the official WAKFU theme, Ymoka's Nightflow theme &amp; Mikkoku's Shukrute theme</author>
+	<author-fr>Naofel, basé sur le thème officiel WAKFU, le thème Nightflow d'Ymoka &amp; le thème Shukrute de Mikkoku</author-fr>
+	<version>4.1</version>
+	<wakfu>1.93</wakfu>
+	<description>Dofus Retro meets Wakfu: warm parchment and browns, orange for actions and selection</description>
+	<description-fr>Fusion Dofus Retro et Wakfu : parchemin et bruns chauds, orange pour les actions et la sélection</description-fr>
 </theme>

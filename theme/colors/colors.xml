@@ -182,7 +182,7 @@
 <!-- ===== RARETÉS — d'origine (chantier futur : à ajuster avec itemsRarityBorders/) ===== -->
 <color id="oldRarityColor" color="#A5AAA0"/>        <!-- [vérifié] -->
 <color id="commonRarityColor" color="#FFFFFF"/>     <!-- [vérifié] -->
-<color id="rareRarityColor" color="#12FF89"/>       <!-- [vérifié] -->
+<color id="rareRarityColor" color="#56ffab"/>       <!-- [vérifié] -->
 <color id="mythicRarityColor" color="#E27A00"/>     <!-- [vérifié] -->
 <color id="legendaryRarityColor" color="#D8EA00"/>  <!-- [vérifié] -->
 <color id="relicRarityColor" color="#A35EFF"/>      <!-- [vérifié] -->

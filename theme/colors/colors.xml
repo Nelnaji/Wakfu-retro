@@ -9,6 +9,9 @@
 <!-- ===== TEXTES — règle : texte avec contour = clair, texte sans contour = foncé ===== -->
 <color id="mainTextLightColor" color="#ffffff"/>                <!-- [vérifié] Texte principal : fenêtres, titres d'en-tête, infobulles d'objets, quantités -->
 <color id="secondTextLightColor" color="#ffffff"/>              <!-- [vérifié] Titres de section, texte secondaire, en-têtes de colonnes (classement donjons), « Niv. » — texte à contour -->
+
+<color id="thirdTextColor" color="#FFFFFF7F"/>   
+
 <color id="mainTextTitleColor" color="#f2ead0"/>                <!-- [vérifié] Champ de saisie du chat, cases cochées, onglets inactifs, champs de saisie, kamas -->
 <color id="defaultLightColor" color="#ffffff"/>                 <!-- [vérifié] Infobulles d'aide, titre de l'infobulle des aptitudes, PV dans le cœur -->
 <color id="mainTextDarkColor" color="#3e3628"/>                 <!-- [vérifié] Petites étiquettes claires : rareté (« Légendaire »), « Actif » -->

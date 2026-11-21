@@ -1,0 +1,37 @@
+# Publie automatiquement une release avec le zip du thème
+# à chaque fois qu'un tag de version (v4.1, v4.2, v5.0-beta…) est poussé.
+name: Release du thème
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Construire le zip du thème
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          mkdir -p dist/theme_Retro-Wakfu
+          cp theme.xml dist/theme_Retro-Wakfu/
+          cp -r theme dist/theme_Retro-Wakfu/
+          cd dist
+          zip -r "Wakfu-Retro-${VERSION}.zip" theme_Retro-Wakfu
+          echo "ZIP=dist/Wakfu-Retro-${VERSION}.zip" >> "$GITHUB_ENV"
+
+      - name: Créer la release et y joindre le zip
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP }}
+          name: "[Retro] ${{ github.ref_name }}"
+          generate_release_notes: true
+          # Un tag contenant « - » (ex. v4.2-beta) est publié en pre-release
+          prerelease: ${{ contains(github.ref_name, '-') }}
